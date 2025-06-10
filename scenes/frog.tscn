@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://c0kym5ctil8fo"]
+
+[ext_resource type="Texture2D" uid="uid://bxunkh1pjnsgh" path="res://assets/frog/taunting/_0000_Layer-1.png" id="1_1g2vb"]
+[ext_resource type="Script" uid="uid://cnpmmyntxrkcd" path="res://scripts/frog.gd" id="1_ybftx"]
+[ext_resource type="Texture2D" uid="uid://c373eakf0xhqb" path="res://assets/frog/taunting/_0001_Layer-2.png" id="2_ybftx"]
+[ext_resource type="Texture2D" uid="uid://dlp3pjcuobwaj" path="res://assets/frog/taunting/_0002_Layer-3.png" id="3_4ifle"]
+[ext_resource type="Texture2D" uid="uid://bgc2rfil33ayc" path="res://assets/frog/taunting/_0003_Layer-4.png" id="4_uu7fg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ycnbg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1g2vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ybftx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4ifle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uu7fg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqhdc"]
+size = Vector2(87, 80)
+
+[node name="frog" type="Node2D" groups=["elementos_juego"]]
+script = ExtResource("1_ybftx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.34952, 2.50595)
+sprite_frames = SubResource("SpriteFrames_ycnbg")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2.5, 12)
+shape = SubResource("RectangleShape2D_eqhdc")

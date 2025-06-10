@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://drr85wkk8bgxu"]
+
+[ext_resource type="Script" uid="uid://dl51nlaii0urv" path="res://scripts/alien.gd" id="1_3vbw7"]
+[ext_resource type="Texture2D" uid="uid://igb8lliduvbp" path="res://assets/alien/00.png" id="1_u8rjw"]
+[ext_resource type="Texture2D" uid="uid://b7uvmnwea0uh5" path="res://assets/alien/01.png" id="2_3vbw7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_np108"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_u8rjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3vbw7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="alien" type="Node2D"]
+script = ExtResource("1_3vbw7")
+
+[node name="spritesmov" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_np108")
+autoplay = "default"

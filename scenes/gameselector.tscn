@@ -1,0 +1,282 @@
+[gd_scene load_steps=18 format=3 uid="uid://baij5s5ctcfx4"]
+
+[ext_resource type="Script" uid="uid://dhhebrtdt31o8" path="res://scripts/gameselector_v_2.gd" id="1_3hdbx"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_cpg7r"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_4p8ou"]
+[ext_resource type="Texture2D" uid="uid://bm81lp31a6swp" path="res://assets/menuAssets/blue_button05.png" id="4_pt5xf"]
+[ext_resource type="Texture2D" uid="uid://bvg0vr6luncyk" path="res://assets/botones_textura/blue_button02.png" id="5_xd871"]
+[ext_resource type="Texture2D" uid="uid://1j5k17vqpufg" path="res://assets/botones_textura/blue_button03.png" id="6_x7hyh"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="7_pt5xf"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="8_xd871"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8mc0h"]
+font = ExtResource("3_4p8ou")
+font_size = 62
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_301da"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n3gy4"]
+texture = ExtResource("5_xd871")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ryoeg"]
+texture = ExtResource("6_x7hyh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_drotm"]
+texture = ExtResource("5_xd871")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x7hyh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3xdwm"]
+texture = ExtResource("7_pt5xf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_babvm"]
+texture = ExtResource("8_xd871")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3nto6"]
+texture = ExtResource("7_pt5xf")
+
+[node name="gameselector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3hdbx")
+
+[node name="background1" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -111.0
+offset_right = 109.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cpg7r")
+
+[node name="temporal" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.505
+anchor_top = 0.109
+anchor_right = 0.505
+anchor_bottom = 0.109
+offset_left = -230.6
+offset_top = -89.52
+offset_right = 230.4
+offset_bottom = 67.48
+grow_horizontal = 2
+grow_vertical = 2
+text = "¿Que área vas
+a entrenar?"
+label_settings = SubResource("LabelSettings_8mc0h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlueButton05" type="Sprite2D" parent="."]
+position = Vector2(340, -302)
+scale = Vector2(4.87763, 5.99722)
+texture = ExtResource("4_pt5xf")
+
+[node name="first_game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.231
+anchor_right = 0.5
+anchor_bottom = 0.231
+offset_left = -321.5
+offset_top = -77.68
+offset_right = 321.5
+offset_bottom = 78.32
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4p8ou")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxTexture_301da")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n3gy4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryoeg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_drotm")
+text = "Concentración"
+
+[node name="second_game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.363
+anchor_right = 0.5
+anchor_bottom = 0.363
+offset_left = -321.0
+offset_top = -77.64
+offset_right = 322.0
+offset_bottom = 78.36
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4p8ou")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxTexture_301da")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n3gy4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryoeg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_drotm")
+text = "Vocabulario"
+
+[node name="third_game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.501
+anchor_top = 0.5
+anchor_right = 0.501
+anchor_bottom = 0.5
+offset_left = -321.72
+offset_top = -80.0
+offset_right = 321.28
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4p8ou")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxTexture_301da")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n3gy4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryoeg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_drotm")
+text = "Cálculo"
+
+[node name="fourth_game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.501
+anchor_top = 0.635
+anchor_right = 0.501
+anchor_bottom = 0.635
+offset_left = -321.72
+offset_top = -77.8
+offset_right = 321.28
+offset_bottom = 78.2
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4p8ou")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxTexture_301da")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n3gy4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryoeg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_drotm")
+text = "Memoria"
+
+[node name="fifth_game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.773
+anchor_right = 0.5
+anchor_bottom = 0.773
+offset_left = -316.0
+offset_top = -77.4401
+offset_right = 327.0
+offset_bottom = 78.5599
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4p8ou")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxTexture_301da")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n3gy4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryoeg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_drotm")
+text = " Orientación Temporal"
+alignment = 0
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.934
+anchor_right = 0.504
+anchor_bottom = 0.934
+offset_left = -145.88
+offset_top = -65.52
+offset_right = 146.12
+offset_bottom = 65.48
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_4p8ou")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_x7hyh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3xdwm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_babvm")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3nto6")
+text = "Volver"
+
+[connection signal="pressed" from="first_game" to="." method="_on_first_game_pressed"]
+[connection signal="pressed" from="second_game" to="." method="_on_second_game_pressed"]
+[connection signal="pressed" from="third_game" to="." method="_on_third_game_pressed"]
+[connection signal="pressed" from="fourth_game" to="." method="_on_fourth_game_pressed"]
+[connection signal="pressed" from="fifth_game" to="." method="_on_fifth_game_pressed"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

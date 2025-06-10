@@ -1,0 +1,192 @@
+[gd_scene load_steps=13 format=3 uid="uid://c4wr5jhjcvqml"]
+
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="1_gf3xg"]
+[ext_resource type="Script" uid="uid://bhni6jwgfp28m" path="res://scenes/recuperar/recuperar_parte_2.gd" id="1_kmplh"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="2_g7hmp"]
+[ext_resource type="Texture2D" uid="uid://bscqeo7ft5le0" path="res://assets/inputfields/grey_button05.png" id="3_kmplh"]
+[ext_resource type="Texture2D" uid="uid://dt7whsotpqdnu" path="res://assets/botones_textura/green_button04.png" id="5_dqqij"]
+[ext_resource type="Texture2D" uid="uid://berlseembd151" path="res://assets/botones_textura/green_button05.png" id="6_4sry6"]
+[ext_resource type="PackedScene" uid="uid://b2arq7e7ydojk" path="res://scenes/buena_carga/carga_buena.tscn" id="7_4sry6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7q7j7"]
+texture = ExtResource("3_kmplh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b4u5o"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2upmx"]
+texture = ExtResource("5_dqqij")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3knee"]
+texture = ExtResource("6_4sry6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kf8ar"]
+texture = ExtResource("5_dqqij")
+
+[node name="recuperar_parte2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kmplh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -129.0
+offset_right = 93.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gf3xg")
+
+[node name="mensaje_error" type="Label" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 245.0
+offset_right = 605.0
+offset_bottom = 348.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 40
+text = "ERROR"
+
+[node name="contrasenia2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 404.0
+offset_right = 700.0
+offset_bottom = 507.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 40
+text = "Contraseña"
+
+[node name="contrasenia" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.496
+anchor_top = 0.384
+anchor_right = 0.496
+anchor_bottom = 0.384
+offset_left = -60.12
+offset_top = -90.52
+offset_right = 339.88
+offset_bottom = 9.47998
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_7q7j7")
+alignment = 1
+secret = true
+
+[node name="repetir_contra" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 520.0
+offset_right = 700.0
+offset_bottom = 623.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 40
+text = "Repetir
+Contraseña"
+
+[node name="repetir_contrasenia" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.523
+anchor_right = 0.5
+anchor_bottom = 0.523
+offset_left = -63.0
+offset_top = -148.44
+offset_right = 337.0
+offset_bottom = -48.44
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_7q7j7")
+alignment = 1
+secret = true
+
+[node name="instrucciones" type="Label" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 90.0
+offset_right = 698.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 40
+text = "Completa los datos para 
+generar una nueva contraseña"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="boton_nueva_contraseña" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.509
+anchor_top = 0.663
+anchor_right = 0.509
+anchor_bottom = 0.663
+offset_left = -327.48
+offset_top = -70.6401
+offset_right = 321.52
+offset_bottom = 70.3599
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g7hmp")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxTexture_b4u5o")
+theme_override_styles/hover = SubResource("StyleBoxTexture_2upmx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3knee")
+theme_override_styles/normal = SubResource("StyleBoxTexture_kf8ar")
+text = "Generar nueva
+ contraseña"
+
+[node name="carga_buena" parent="." instance=ExtResource("7_4sry6")]
+visible = false
+layout_mode = 1
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = -2.0
+
+[connection signal="pressed" from="boton_nueva_contraseña" to="." method="_on_boton_nueva_contraseña_pressed"]

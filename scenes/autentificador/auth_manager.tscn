@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://brqumkl0v364h"]
+
+[ext_resource type="Script" uid="uid://clxxyommhabw8" path="res://scripts/inicio_sesion/autenticador.gd" id="1_urxgs"]
+
+[node name="AuthManager" type="Node"]
+script = ExtResource("1_urxgs")

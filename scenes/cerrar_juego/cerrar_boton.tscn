@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://xa7wmk5nmc53"]
+
+[ext_resource type="Texture2D" uid="uid://1cyh6qr02ufu" path="res://assets/cerrar/red_boxCross.png" id="1_8l2np"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_muhmd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5wqop"]
+texture = ExtResource("1_8l2np")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rec3p"]
+texture = ExtResource("1_8l2np")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8tv5j"]
+texture = ExtResource("1_8l2np")
+
+[node name="Node" type="Node"]
+
+[node name="cerrar" type="Button" parent="."]
+offset_left = 317.0
+offset_top = 168.0
+offset_right = 372.0
+offset_bottom = 223.0
+theme_override_styles/focus = SubResource("StyleBoxTexture_muhmd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5wqop")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_rec3p")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8tv5j")

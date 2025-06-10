@@ -1,0 +1,322 @@
+[gd_scene load_steps=36 format=3 uid="uid://c8xbehxx632wl"]
+
+[ext_resource type="Script" uid="uid://d14gvk18oj632" path="res://scripts/game_1.gd" id="1_8lody"]
+[ext_resource type="Texture2D" uid="uid://bb45c6a0ib8oe" path="res://assets/backgrounds/sunny.png" id="2_luixn"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_luixn"]
+[ext_resource type="FontFile" uid="uid://bihnn0xq70x5x" path="res://assets/fuentes/AtkinsonHyperlegible-Regular.ttf" id="3_ygnno"]
+[ext_resource type="Texture2D" uid="uid://bqe0op80jgpdv" path="res://assets/botones_textura/green_button10.png" id="4_8rbwk"]
+[ext_resource type="AudioStream" uid="uid://b0bu315iwj81h" path="res://assets/sfxfeedback/Signal Positive Ceramic C.wav" id="5_5lnxe"]
+[ext_resource type="Texture2D" uid="uid://dcdrl2t5r6dc1" path="res://assets/botones_textura/green_button09.png" id="5_lyscb"]
+[ext_resource type="AudioStream" uid="uid://c54ocl20jhrqk" path="res://assets/sfxfeedback/Signal Negative Space B.wav" id="6_fxkey"]
+[ext_resource type="Texture2D" uid="uid://clphlmifay7pa" path="res://assets/botones_textura/blue_button09.png" id="6_lyscb"]
+[ext_resource type="Texture2D" uid="uid://7lj6i2ahonfi" path="res://assets/botones_textura/blue_button10.png" id="7_luixn"]
+[ext_resource type="AudioStream" uid="uid://cn81dm6bo6xvb" path="res://assets/sfxboton/Bouncy Select.wav" id="9_luixn"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="10_6xfxu"]
+[ext_resource type="Texture2D" uid="uid://bdg2pnye1en5f" path="res://assets/texturasgenericas/red_panel.png" id="11_bwy7h"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="13_gosqb"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="14_5lnxe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pncae"]
+font = ExtResource("3_luixn")
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7gu72"]
+font = ExtResource("3_luixn")
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_prawa"]
+font = ExtResource("3_luixn")
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ygnno"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8rbwk"]
+texture = ExtResource("5_lyscb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_luixn"]
+texture = ExtResource("4_8rbwk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fxokx"]
+texture = ExtResource("5_lyscb")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8lody"]
+font = ExtResource("3_luixn")
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6xfxu"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bwy7h"]
+texture = ExtResource("6_lyscb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gosqb"]
+texture = ExtResource("6_lyscb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_prawa"]
+texture = ExtResource("7_luixn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1lbx"]
+texture = ExtResource("6_lyscb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cuiao"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fxkey"]
+texture = ExtResource("13_gosqb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l075e"]
+texture = ExtResource("14_5lnxe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gvls4"]
+texture = ExtResource("13_gosqb")
+
+[sub_resource type="LabelSettings" id="LabelSettings_a1lbx"]
+font = ExtResource("3_luixn")
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5lnxe"]
+texture = ExtResource("11_bwy7h")
+
+[sub_resource type="LabelSettings" id="LabelSettings_fxkey"]
+font = ExtResource("3_luixn")
+font_size = 70
+
+[node name="game1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8lody")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -112.0
+offset_top = -145.0
+offset_right = 112.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_6xfxu")
+
+[node name="background" type="TextureRect" parent="."]
+visible = false
+modulate = Color(0.932215, 0.900033, 0.958992, 1)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -765.0
+offset_top = -443.0
+offset_right = 876.0
+offset_bottom = 486.0
+grow_vertical = 2
+texture = ExtResource("2_luixn")
+
+[node name="labeltiempo" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.243
+anchor_top = 0.79
+anchor_right = 0.243
+anchor_bottom = 0.79
+offset_left = -141.96
+offset_top = -52.2
+offset_right = 142.04
+offset_bottom = 52.8
+grow_vertical = 2
+text = "Tiempo"
+label_settings = SubResource("LabelSettings_pncae")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="mensajeoculto" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.493
+anchor_top = 0.193
+anchor_right = 0.493
+anchor_bottom = 0.193
+offset_left = -352.96
+offset_top = -48.04
+offset_right = 349.04
+offset_bottom = 51.96
+grow_horizontal = 2
+grow_vertical = 2
+text = "MENSAJE OCULTO"
+label_settings = SubResource("LabelSettings_7gu72")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="positive" type="AudioStreamPlayer2D" parent="mensajeoculto"]
+stream = ExtResource("5_5lnxe")
+bus = &"sfx"
+
+[node name="negative" type="AudioStreamPlayer2D" parent="mensajeoculto"]
+stream = ExtResource("6_fxkey")
+bus = &"sfx"
+
+[node name="ronda" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.057
+anchor_right = 0.5
+anchor_bottom = 0.057
+offset_left = -166.0
+offset_top = -49.96
+offset_right = 166.0
+offset_bottom = 50.04
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_luixn")
+theme_override_font_sizes/font_size = 80
+text = "Ronda "
+label_settings = SubResource("LabelSettings_prawa")
+
+[node name="plus" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.843
+anchor_top = 0.376
+anchor_right = 0.843
+anchor_bottom = 0.376
+offset_left = -95.96
+offset_top = -96.28
+offset_right = 96.04
+offset_bottom = 96.72
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ygnno")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_ygnno")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8rbwk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_luixn")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fxokx")
+text = "+"
+
+[node name="cantidad" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.838
+anchor_top = 0.498
+anchor_right = 0.838
+anchor_bottom = 0.5
+offset_left = -26.36
+offset_top = -46.44
+offset_right = 38.6401
+offset_bottom = 51.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "0"
+label_settings = SubResource("LabelSettings_8lody")
+
+[node name="minus" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.844
+anchor_top = 0.624
+anchor_right = 0.844
+anchor_bottom = 0.624
+offset_left = -95.6801
+offset_top = -95.72
+offset_right = 96.3199
+offset_bottom = 96.28
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ygnno")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_6xfxu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bwy7h")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gosqb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_prawa")
+theme_override_styles/normal = SubResource("StyleBoxTexture_a1lbx")
+text = "-"
+
+[node name="audioboton" type="AudioStreamPlayer2D" parent="minus"]
+stream = ExtResource("9_luixn")
+bus = &"sfx"
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.506
+anchor_top = 0.931
+anchor_right = 0.506
+anchor_bottom = 0.931
+offset_left = -146.32
+offset_top = -60.6801
+offset_right = 145.68
+offset_bottom = 61.3199
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_luixn")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_cuiao")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fxkey")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l075e")
+theme_override_styles/normal = SubResource("StyleBoxTexture_gvls4")
+text = "Volver"
+
+[node name="instrucciones" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.506
+anchor_top = 0.214
+anchor_right = 0.506
+anchor_bottom = 0.214
+offset_left = -256.32
+offset_top = -76.92
+offset_right = 256.68
+offset_bottom = 76.08
+text = "¿Cuántos pajaros 
+hay en pantalla?"
+label_settings = SubResource("LabelSettings_a1lbx")
+
+[node name="pantallaresumen" type="Node" parent="."]
+
+[node name="backgroundResumen" type="TextureRect" parent="pantallaresumen"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -71.0
+offset_top = -59.0
+offset_right = 82.0
+offset_bottom = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_6xfxu")
+
+[node name="textoResumen" type="Label" parent="pantallaresumen"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -128.5
+offset_right = 200.0
+offset_bottom = 128.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_luixn")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_5lnxe")
+text = "Puntaje:"
+label_settings = SubResource("LabelSettings_fxkey")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="plus" to="." method="_on_plus_pressed"]
+[connection signal="pressed" from="minus" to="." method="_on_minus_pressed"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

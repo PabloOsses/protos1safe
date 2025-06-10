@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dw5frkw68pbby"
+path="res://.godot/imported/Casual Vol3 Nightly Routine Intensity 1.wav-092993d63132205084be4680d854c427.sample"
+
+[deps]
+
+source_file="res://assets/musicafondo/game3/Casual Vol3 Nightly Routine Intensity 1.wav"
+dest_files=["res://.godot/imported/Casual Vol3 Nightly Routine Intensity 1.wav-092993d63132205084be4680d854c427.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

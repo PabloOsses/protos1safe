@@ -1,0 +1,345 @@
+[gd_scene load_steps=26 format=3 uid="uid://gxomcw4runto"]
+
+[ext_resource type="Script" uid="uid://byh7yyvahc8h2" path="res://scripts/inicio_sesion/inicio_sesion.gd" id="1_k8mw4"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="2_3lemt"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_osykg"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="4_4fvyv"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="5_jwtql"]
+[ext_resource type="Texture2D" uid="uid://bscqeo7ft5le0" path="res://assets/inputfields/grey_button05.png" id="7_nripc"]
+[ext_resource type="PackedScene" uid="uid://brqumkl0v364h" path="res://scenes/autentificador/auth_manager.tscn" id="7_vwfth"]
+[ext_resource type="PackedScene" uid="uid://c5j2xe6gessce" path="res://scenes/random/aliens_callendo.tscn" id="8_vwfth"]
+[ext_resource type="Texture2D" uid="uid://dt7whsotpqdnu" path="res://assets/botones_textura/green_button04.png" id="9_osykg"]
+[ext_resource type="Texture2D" uid="uid://berlseembd151" path="res://assets/botones_textura/green_button05.png" id="10_xs3oi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xs3oi"]
+texture = ExtResource("7_nripc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2nwxj"]
+texture = ExtResource("7_nripc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nripc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vwfth"]
+texture = ExtResource("4_4fvyv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ipq3d"]
+texture = ExtResource("5_jwtql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_osykg"]
+texture = ExtResource("4_4fvyv")
+
+[sub_resource type="LabelSettings" id="LabelSettings_4fvyv"]
+font = ExtResource("2_3lemt")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oyq12"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h1gla"]
+texture = ExtResource("4_4fvyv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0q8yj"]
+texture = ExtResource("5_jwtql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2b88e"]
+texture = ExtResource("4_4fvyv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_krp58"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y67ac"]
+texture = ExtResource("9_osykg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvhox"]
+texture = ExtResource("10_xs3oi")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2vbrf"]
+texture = ExtResource("9_osykg")
+
+[node name="vista_inicio_credenciales" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k8mw4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -129.0
+offset_right = 93.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_osykg")
+
+[node name="aliensCallendo" parent="." instance=ExtResource("8_vwfth")]
+layout_mode = 1
+
+[node name="maillabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 202.0
+offset_right = 700.0
+offset_bottom = 305.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 40
+text = "Correo"
+
+[node name="mail" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.513
+anchor_top = 0.22
+anchor_right = 0.513
+anchor_bottom = 0.22
+offset_left = -71.36
+offset_top = -84.6
+offset_right = 328.64
+offset_bottom = 15.4
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_xs3oi")
+alignment = 1
+
+[node name="contralabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 415.0
+offset_right = 700.0
+offset_bottom = 518.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 40
+text = "Contraseña"
+
+[node name="contrasenia" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.374
+anchor_right = 0.512
+anchor_bottom = 0.374
+offset_left = -71.64
+offset_top = -73.72
+offset_right = 328.36
+offset_bottom = 26.28
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_2nwxj")
+alignment = 1
+secret = true
+
+[node name="Inicio" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = -81.0
+offset_right = 155.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxTexture_nripc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vwfth")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ipq3d")
+theme_override_styles/normal = SubResource("StyleBoxTexture_osykg")
+text = "Entrar"
+
+[node name="estado" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.077
+anchor_right = 0.5
+anchor_bottom = 0.077
+offset_left = -79.0
+offset_top = -23.56
+offset_right = 80.0
+offset_bottom = 26.44
+grow_horizontal = 2
+grow_vertical = 2
+text = "Coloque sus credenciales"
+label_settings = SubResource("LabelSettings_4fvyv")
+
+[node name="instruccion creden" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.077
+anchor_right = 0.5
+anchor_bottom = 0.077
+offset_left = -339.0
+offset_top = 656.44
+offset_right = 145.0
+offset_bottom = 759.44
+grow_horizontal = 2
+grow_vertical = 2
+text = "¿Necesita
+credenciales?"
+label_settings = SubResource("LabelSettings_4fvyv")
+
+[node name="instruccion_olvido" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.077
+anchor_right = 0.5
+anchor_bottom = 0.077
+offset_left = -339.0
+offset_top = 825.44
+offset_right = 145.0
+offset_bottom = 928.44
+grow_horizontal = 2
+grow_vertical = 2
+text = "¿Olvido su
+ contraseña?"
+label_settings = SubResource("LabelSettings_4fvyv")
+
+[node name="AuthManager" parent="." instance=ExtResource("7_vwfth")]
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.934
+anchor_right = 0.504
+anchor_bottom = 0.934
+offset_left = -147.88
+offset_top = -65.52
+offset_right = 144.12
+offset_bottom = 65.48
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_oyq12")
+theme_override_styles/hover = SubResource("StyleBoxTexture_h1gla")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0q8yj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2b88e")
+text = "Volver"
+
+[node name="registro" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.481
+anchor_top = 0.81
+anchor_right = 0.481
+anchor_bottom = 0.81
+offset_left = 63.68
+offset_top = -292.8
+offset_right = 363.68
+offset_bottom = -172.8
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxTexture_krp58")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y67ac")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uvhox")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2vbrf")
+text = "Registro"
+
+[node name="recuperar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.481
+anchor_top = 0.81
+anchor_right = 0.481
+anchor_bottom = 0.81
+offset_left = 63.68
+offset_top = -125.8
+offset_right = 363.68
+offset_bottom = -5.80005
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3lemt")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxTexture_krp58")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y67ac")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uvhox")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2vbrf")
+text = "Recuperar"
+
+[connection signal="pressed" from="Inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
+[connection signal="pressed" from="registro" to="." method="_on_registro_pressed"]
+[connection signal="pressed" from="recuperar" to="." method="_on_recuperar_pressed"]

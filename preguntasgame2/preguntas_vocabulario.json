@@ -1,0 +1,102 @@
+[
+	{
+	  "definicion": "Instrumento para cortar papel o tela.",
+	  "alternativas": ["Cuchillo", "Tijeras", "Cutter", "Sierra"],
+	  "respuesta_correcta": "Tijeras"
+	},
+	{
+	  "definicion": "Líquido vital para los seres humanos.",
+	  "alternativas": ["Jugo", "Agua", "Leche", "Refresco"],
+	  "respuesta_correcta": "Agua"
+	},
+	{
+	  "definicion": "Fruto amarillo ácido.",
+	  "alternativas": ["Limón", "Plátano", "Piña", "Mango"],
+	  "respuesta_correcta": "Limón"
+	},
+	{
+	  "definicion": "Objeto para sentarse.",
+	  "alternativas": ["Mesa", "Silla", "Cama", "Sofá"],
+	  "respuesta_correcta": "Silla"
+	},
+	{
+	  "definicion": "Aparato para enfriar la comida.",
+	  "alternativas": ["Horno", "Lavadora", "Refrigerador", "Licuadora"],
+	  "respuesta_correcta": "Refrigerador"
+	},
+	{
+	  "definicion": "Día que viene después del viernes.",
+	  "alternativas": ["Domingo", "Lunes", "Sábado", "Martes"],
+	  "respuesta_correcta": "Sábado"
+	},
+	{
+	  "definicion": "Animal que vuela y canta.",
+	  "alternativas": ["Murciélago", "Pájaro", "Mariposa", "Abeja"],
+	  "respuesta_correcta": "Pájaro"
+	},
+	{
+	  "definicion": "Color de la hierba.",
+	  "alternativas": ["Azul", "Rojo", "Verde", "Amarillo"],
+	  "respuesta_correcta": "Verde"
+	},
+	{
+	  "definicion": "Objeto para iluminar de noche.",
+	  "alternativas": ["Vela", "Lámpara", "Linterna", "Foco"],
+	  "respuesta_correcta": "Lámpara"
+	},
+	{
+	  "definicion": "Fruto rojo con semillas externas.",
+	  "alternativas": ["Fresa", "Manzana", "Cereza", "Sandía"],
+	  "respuesta_correcta": "Fresa"
+	},
+	{
+	  "definicion": "Instrumento para medir el tiempo.",
+	  "alternativas": ["Termómetro", "Reloj", "Calendario", "Cronómetro"],
+	  "respuesta_correcta": "Reloj"
+	},
+	{
+	  "definicion": "Lugar donde crecen las plantas.",
+	  "alternativas": ["Jardín", "Cocina", "Garaje", "Baño"],
+	  "respuesta_correcta": "Jardín"
+	},
+	{
+	  "definicion": "Objeto para cubrir la cabeza.",
+	  "alternativas": ["Bufanda", "Guantes", "Sombrero", "Zapatos"],
+	  "respuesta_correcta": "Sombrero"
+	},
+	{
+	  "definicion": "Animal que maúlla.",
+	  "alternativas": ["Perro", "Gato", "Pájaro", "Ratón"],
+	  "respuesta_correcta": "Gato"
+	},
+	{
+	  "definicion": "Fruto seco de color marrón.",
+	  "alternativas": ["Nuez", "Uva", "Manzana", "Pera"],
+	  "respuesta_correcta": "Nuez"
+	},
+	{
+	  "definicion": "Objeto para escribir en papel.",
+	  "alternativas": ["Lápiz", "Pincel", "Goma", "Regla"],
+	  "respuesta_correcta": "Lápiz"
+	},
+	{
+	  "definicion": "Lugar donde duermes.",
+	  "alternativas": ["Sala", "Cocina", "Dormitorio", "Baño"],
+	  "respuesta_correcta": "Dormitorio"
+	},
+	{
+	  "definicion": "Color del cielo despejado.",
+	  "alternativas": ["Gris", "Azul", "Negro", "Blanco"],
+	  "respuesta_correcta": "Azul"
+	},
+	{
+	  "definicion": "Objeto para abrir puertas.",
+	  "alternativas": ["Llave", "Martillo", "Destornillador", "Cuchillo"],
+	  "respuesta_correcta": "Llave"
+	},
+	{
+	  "definicion": "Animal que nada en el agua.",
+	  "alternativas": ["Pez", "Pájaro", "Perro", "Gato"],
+	  "respuesta_correcta": "Pez"
+	}
+]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx82qafleyhyd"]
+
+[ext_resource type="Script" uid="uid://ihkep4j81wb7" path="res://scripts/game_5/clock.gd" id="1_dqa6h"]
+
+[node name="Clock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dqa6h")

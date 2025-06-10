@@ -1,0 +1,355 @@
+[gd_scene load_steps=29 format=3 uid="uid://thdmmv1j5w1u"]
+
+[ext_resource type="Script" uid="uid://bfj1dwvk8l0ip" path="res://scenes/configuracionUsuario/configuracion_usuario.gd" id="1_65ckx"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_cse8m"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_cse8m"]
+[ext_resource type="Script" uid="uid://dmmywh8jsf7s5" path="res://scenes/configuracionUsuario/volumeslider.gd" id="4_376ng"]
+[ext_resource type="Texture2D" uid="uid://deha63nrhktw" path="res://assets/grabbers/yellow_sliderDown.png" id="4_j4ml8"]
+[ext_resource type="Texture2D" uid="uid://bfm4s1ycj3tmf" path="res://assets/texturasgenericas/yellow_panel.png" id="5_bg5tm"]
+[ext_resource type="Script" uid="uid://deyrjv8g3alfm" path="res://scenes/configuracionUsuario/volumeslidersfx.gd" id="7_6glpt"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="8_bytkl"]
+[ext_resource type="AudioStream" uid="uid://cn81dm6bo6xvb" path="res://assets/sfxboton/Bouncy Select.wav" id="8_hdcn5"]
+[ext_resource type="Texture2D" uid="uid://bvg0vr6luncyk" path="res://assets/botones_textura/blue_button02.png" id="9_7kl5f"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="9_hdcn5"]
+[ext_resource type="Texture2D" uid="uid://berlseembd151" path="res://assets/botones_textura/green_button05.png" id="10_kc7os"]
+[ext_resource type="PackedScene" uid="uid://l0ovuhsh2131" path="res://scenes/pantalla_de_carga/pantalla_carga_user_config.tscn" id="13_kc7os"]
+[ext_resource type="PackedScene" uid="uid://b23yqidinpuqg" path="res://scenes/carga_config_guardar/carga_guardar_conif.tscn" id="14_c2h6a"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bg5tm"]
+texture = ExtResource("5_bg5tm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6glpt"]
+texture = ExtResource("5_bg5tm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gv2mw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eu7kq"]
+texture = ExtResource("9_7kl5f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j3d8w"]
+texture = ExtResource("10_kc7os")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6ugmq"]
+texture = ExtResource("9_7kl5f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rxvwp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_in4eh"]
+texture = ExtResource("8_bytkl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0dy0h"]
+texture = ExtResource("9_hdcn5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uwaps"]
+texture = ExtResource("8_bytkl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d36h1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7kl5f"]
+texture = ExtResource("8_bytkl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kc7os"]
+texture = ExtResource("9_hdcn5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c2h6a"]
+texture = ExtResource("8_bytkl")
+
+[node name="configuracionUsuario" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_65ckx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -129.0
+offset_right = 93.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cse8m")
+
+[node name="volmusica" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -352.0
+offset_right = 309.0
+offset_bottom = -302.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+text = "Volumen Música"
+
+[node name="Config" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.0
+offset_top = 132.0
+offset_right = 237.0
+offset_bottom = 182.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 50
+text = "Configuración de usuario"
+
+[node name="volumeslider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 359.0
+offset_right = 546.0
+offset_bottom = 421.0
+theme_override_icons/grabber = ExtResource("4_j4ml8")
+theme_override_icons/grabber_highlight = ExtResource("4_j4ml8")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_bg5tm")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_6glpt")
+max_value = 1.0
+step = 0.001
+script = ExtResource("4_376ng")
+
+[node name="volefectos" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -195.0
+offset_right = 309.0
+offset_bottom = -145.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+text = "Volumen Efectos"
+
+[node name="volumeslidersfx" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 526.0
+offset_right = 552.0
+offset_bottom = 588.0
+theme_override_icons/grabber = ExtResource("4_j4ml8")
+theme_override_icons/grabber_highlight = ExtResource("4_j4ml8")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_bg5tm")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_6glpt")
+max_value = 1.0
+step = 0.001
+script = ExtResource("7_6glpt")
+
+[node name="BouncySelect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_hdcn5")
+bus = &"sfx"
+
+[node name="Dificultad" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -25.0
+offset_right = 238.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+text = "Dificultad de actividades"
+
+[node name="facil" type="Button" parent="Dificultad"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.004
+anchor_top = 2.9
+anchor_right = -0.004
+anchor_bottom = 2.9
+offset_left = -102.096
+offset_top = -39.0
+offset_right = 101.904
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxTexture_gv2mw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_eu7kq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_j3d8w")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6ugmq")
+toggle_mode = true
+text = "Fácil"
+
+[node name="medio" type="Button" parent="Dificultad"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 2.86
+anchor_right = 0.5
+anchor_bottom = 2.86
+offset_left = -101.0
+offset_top = -39.0
+offset_right = 103.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxTexture_gv2mw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_eu7kq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_j3d8w")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6ugmq")
+toggle_mode = true
+text = "Medio"
+
+[node name="dificil" type="Button" parent="Dificultad"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.017
+anchor_top = 2.84
+anchor_right = 1.017
+anchor_bottom = 2.84
+offset_left = -102.092
+offset_top = -39.0
+offset_right = 101.908
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxTexture_gv2mw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_eu7kq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_j3d8w")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6ugmq")
+toggle_mode = true
+text = "Difícil"
+
+[node name="guardar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.756
+anchor_right = 0.5
+anchor_bottom = 0.756
+offset_left = -141.0
+offset_top = -62.6801
+offset_right = 149.0
+offset_bottom = 63.3199
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxTexture_rxvwp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_in4eh")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0dy0h")
+theme_override_styles/normal = SubResource("StyleBoxTexture_uwaps")
+text = "Guardar"
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.934
+anchor_right = 0.504
+anchor_bottom = 0.934
+offset_left = -145.88
+offset_top = -65.52
+offset_right = 146.12
+offset_bottom = 65.48
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_cse8m")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_d36h1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7kl5f")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kc7os")
+theme_override_styles/normal = SubResource("StyleBoxTexture_c2h6a")
+text = "Volver"
+
+[node name="pantallaCarga_user_config" parent="." instance=ExtResource("13_kc7os")]
+layout_mode = 1
+offset_left = -3.0
+offset_top = 2.0
+offset_right = -3.0
+offset_bottom = 2.0
+
+[node name="carga_guardar_conif" parent="." instance=ExtResource("14_c2h6a")]
+visible = false
+layout_mode = 1
+offset_left = -2.0
+offset_top = -6.0
+offset_right = -2.0
+offset_bottom = -6.0
+
+[connection signal="pressed" from="Dificultad/facil" to="." method="_on_facil_pressed"]
+[connection signal="pressed" from="Dificultad/medio" to="." method="_on_medio_pressed"]
+[connection signal="pressed" from="Dificultad/dificil" to="." method="_on_dificil_pressed"]
+[connection signal="pressed" from="guardar" to="." method="_on_guardar_pressed"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

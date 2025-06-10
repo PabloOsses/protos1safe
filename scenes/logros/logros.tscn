@@ -1,0 +1,619 @@
+[gd_scene load_steps=80 format=3 uid="uid://8y74ulegv2bd"]
+
+[ext_resource type="Script" uid="uid://d258wfxan3buy" path="res://scenes/logros/logros.gd" id="1_f4k3q"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_blyse"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_w3kj2"]
+[ext_resource type="Texture2D" uid="uid://1j5k17vqpufg" path="res://assets/botones_textura/blue_button03.png" id="4_gysrm"]
+[ext_resource type="Texture2D" uid="uid://dyv8f68iyflpf" path="res://assets/anima/hero/hero_run/player-run-1.png" id="4_t13vj"]
+[ext_resource type="Texture2D" uid="uid://cmy4a4i2m06ko" path="res://assets/anima/hero/hero_run/player-run-2.png" id="5_gysrm"]
+[ext_resource type="Texture2D" uid="uid://d0x6oom6j4qrb" path="res://assets/anima/woman_red/woman-walk/woman-walk-1.png" id="5_k7w7p"]
+[ext_resource type="Texture2D" uid="uid://dms6bofgedfrg" path="res://assets/anima/dance_lass/activated/young-woman-skip-1.png" id="5_n3pl4"]
+[ext_resource type="Texture2D" uid="uid://d22s5xewei1i2" path="res://assets/anima/dance_lass/activated/young-woman-skip-2.png" id="6_51xj6"]
+[ext_resource type="Texture2D" uid="uid://mkkr5jaumthi" path="res://assets/anima/hero/hero_run/player-run-3.png" id="6_hlhkh"]
+[ext_resource type="Texture2D" uid="uid://cdvy4o5cmyf4i" path="res://assets/anima/woman_red/woman-walk/woman-walk-2.png" id="6_oi76k"]
+[ext_resource type="Texture2D" uid="uid://csls3mntbs1kl" path="res://assets/anima/hero/hero_run/player-run-4.png" id="7_dk8lp"]
+[ext_resource type="Texture2D" uid="uid://4e1h6qks0ukw" path="res://assets/anima/woman_red/woman-walk/woman-walk-3.png" id="7_qs8o1"]
+[ext_resource type="Texture2D" uid="uid://cajebj7xvha2x" path="res://assets/anima/dance_lass/activated/young-woman-skip-3.png" id="7_se4uu"]
+[ext_resource type="Texture2D" uid="uid://dr1yjw02a5fi7" path="res://assets/anima/hero/hero_run/player-run-5.png" id="8_ftod1"]
+[ext_resource type="Texture2D" uid="uid://dg4gk00r05774" path="res://assets/anima/dance_lass/activated/young-woman-skip-4.png" id="8_q2gkp"]
+[ext_resource type="Texture2D" uid="uid://bpj611vuf6v8q" path="res://assets/anima/woman_red/woman-walk/woman-walk-4.png" id="8_tsf7j"]
+[ext_resource type="Texture2D" uid="uid://cjpvbfg5onjf" path="res://assets/anima/dance_lass/activated/young-woman-skip-5.png" id="9_b2dk4"]
+[ext_resource type="Texture2D" uid="uid://cyym5ftsb2soi" path="res://assets/anima/woman_red/woman-walk/woman-walk-5.png" id="9_e74c5"]
+[ext_resource type="Texture2D" uid="uid://6dl86rnxucva" path="res://assets/anima/hero/hero_run/player-run-6.png" id="9_fhu71"]
+[ext_resource type="Texture2D" uid="uid://7wu6rujjgxjk" path="res://assets/anima/woman_red/woman-walk/woman-walk-6.png" id="10_136ym"]
+[ext_resource type="Texture2D" uid="uid://3dlkn8v10whd" path="res://assets/anima/hero/hero_run/player-run-7.png" id="10_elec8"]
+[ext_resource type="Texture2D" uid="uid://dnmke3k1u1k25" path="res://assets/anima/dance_lass/activated/young-woman-skip-6.png" id="10_ur2ai"]
+[ext_resource type="Texture2D" uid="uid://dc8xmbcd4fus8" path="res://assets/anima/dance_lass/activated/young-woman-skip-7.png" id="11_dau54"]
+[ext_resource type="Texture2D" uid="uid://3sq5dul8aevo" path="res://assets/anima/woman_red/woman-idle/woman-idle-1.png" id="11_fnuah"]
+[ext_resource type="Texture2D" uid="uid://cohvkrpjuyawb" path="res://assets/anima/hero/hero_idle/player-idle-1.png" id="11_gv7tw"]
+[ext_resource type="Texture2D" uid="uid://ca1y0ab2vdrgb" path="res://assets/anima/dance_lass/activated/young-woman-skip-8.png" id="12_86qi5"]
+[ext_resource type="Texture2D" uid="uid://dj46v5nou1tvq" path="res://assets/anima/woman_red/woman-idle/woman-idle-2.png" id="12_e4gpo"]
+[ext_resource type="Texture2D" uid="uid://cvxeamnimy6mr" path="res://assets/anima/hero/hero_idle/player-idle-2.png" id="12_j11g2"]
+[ext_resource type="Texture2D" uid="uid://b385ouoc6odne" path="res://assets/anima/hero/hero_idle/player-idle-3.png" id="13_1fklg"]
+[ext_resource type="Texture2D" uid="uid://0yj6273xgbtp" path="res://assets/anima/dance_lass/idle/young-woman-idle-1.png" id="13_b17bj"]
+[ext_resource type="Texture2D" uid="uid://ceu70cdy71rvg" path="res://assets/anima/woman_red/woman-idle/woman-idle-3.png" id="13_q520c"]
+[ext_resource type="Texture2D" uid="uid://dk243omtq8x55" path="res://assets/anima/dance_lass/idle/young-woman-idle-2.png" id="14_j6y1v"]
+[ext_resource type="Texture2D" uid="uid://c05is7ho4c6wd" path="res://assets/anima/woman_red/woman-idle/woman-idle-4.png" id="14_l81c7"]
+[ext_resource type="Texture2D" uid="uid://cxlrq8gcvd73s" path="res://assets/anima/hero/hero_idle/player-idle-4.png" id="14_n3pl4"]
+[ext_resource type="Texture2D" uid="uid://c3muspmtxc5wy" path="res://assets/anima/woman_red/woman-idle/woman-idle-5.png" id="15_1cfjv"]
+[ext_resource type="Texture2D" uid="uid://bv2yhu8ceinam" path="res://assets/anima/dance_lass/idle/young-woman-idle-3.png" id="15_p2smd"]
+[ext_resource type="Texture2D" uid="uid://epeybj6lpcfc" path="res://assets/anima/dance_lass/idle/young-woman-idle-4.png" id="16_14q3e"]
+[ext_resource type="Texture2D" uid="uid://clp4csreyl73k" path="res://assets/anima/woman_red/woman-idle/woman-idle-6.png" id="16_42dmc"]
+[ext_resource type="Texture2D" uid="uid://de3vdrmpqc7lh" path="res://assets/anima/woman_red/woman-idle/woman-idle-7.png" id="17_1uju5"]
+[ext_resource type="Texture2D" uid="uid://cpfom8r4788er" path="res://assets/anima/dance_lass/idle/young-woman-idle-5.png" id="17_qsop4"]
+[ext_resource type="Texture2D" uid="uid://bxo85lxn23ajk" path="res://assets/anima/dance_lass/idle/young-woman-idle-6.png" id="18_ct6v0"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="18_fhu71"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="19_elec8"]
+[ext_resource type="Texture2D" uid="uid://nvvabk37v6op" path="res://assets/anima/dance_lass/idle/young-woman-idle-7.png" id="19_mn6ls"]
+[ext_resource type="Texture2D" uid="uid://l2osimec0rbs" path="res://assets/anima/dance_lass/idle/young-woman-idle-8.png" id="20_0spie"]
+[ext_resource type="Texture2D" uid="uid://dpt7ng1wcbt2m" path="res://assets/anima/fox2/run/player-run-1.png" id="20_1h7jo"]
+[ext_resource type="Texture2D" uid="uid://cbq6vv8wi6ls0" path="res://assets/anima/fox2/run/player-run-2.png" id="21_s6o85"]
+[ext_resource type="Texture2D" uid="uid://c801rvi7ou2t0" path="res://assets/anima/fox2/run/player-run-3.png" id="22_xkink"]
+[ext_resource type="Texture2D" uid="uid://fkop8ru1wr1a" path="res://assets/anima/fox2/run/player-run-4.png" id="23_pldq1"]
+[ext_resource type="Texture2D" uid="uid://bbaplxvc07juy" path="res://assets/anima/fox2/run/player-run-5.png" id="24_omotw"]
+[ext_resource type="Texture2D" uid="uid://bxb0lx78l5di3" path="res://assets/anima/fox2/run/player-run-6.png" id="25_k2o0n"]
+[ext_resource type="Texture2D" uid="uid://2vmx2hhiv3vj" path="res://assets/anima/fox2/idle/player-idle-1.png" id="26_jbgn0"]
+[ext_resource type="Texture2D" uid="uid://0onppp4j8fjj" path="res://assets/anima/fox2/idle/player-idle-2.png" id="27_lisom"]
+[ext_resource type="Texture2D" uid="uid://dmxm6nbl6myfv" path="res://assets/anima/fox2/idle/player-idle-3.png" id="28_2g85e"]
+[ext_resource type="Texture2D" uid="uid://dibi6klxs3j7w" path="res://assets/anima/imp/run/Sprites/run-1.png" id="28_yjxvn"]
+[ext_resource type="Texture2D" uid="uid://h3ha0mmam1lb" path="res://assets/anima/imp/run/Sprites/run-2.png" id="29_48es8"]
+[ext_resource type="Texture2D" uid="uid://cg4rxaa25jrf4" path="res://assets/anima/fox2/idle/player-idle-4.png" id="29_aioiq"]
+[ext_resource type="Texture2D" uid="uid://b7ws7ss6nntlu" path="res://assets/anima/imp/run/Sprites/run-3.png" id="30_1h7jo"]
+[ext_resource type="Texture2D" uid="uid://bh8gnirvawxk4" path="res://assets/anima/imp/run/Sprites/run-4.png" id="31_s6o85"]
+[ext_resource type="Texture2D" uid="uid://c1hsumpum5e2s" path="res://assets/anima/imp/run/Sprites/run-5.png" id="32_xkink"]
+[ext_resource type="Texture2D" uid="uid://oog7hqtt2fxi" path="res://assets/anima/imp/run/Sprites/run-6.png" id="33_pldq1"]
+[ext_resource type="Texture2D" uid="uid://cxxc14n7lphsr" path="res://assets/anima/imp/run/Sprites/run-7.png" id="34_omotw"]
+[ext_resource type="Texture2D" uid="uid://bdba77bcfxpbk" path="res://assets/anima/imp/run/Sprites/run-8.png" id="35_k2o0n"]
+[ext_resource type="Texture2D" uid="uid://dplrgkc5y7hq8" path="res://assets/anima/imp/idle/Sprites/idle-1.png" id="36_jbgn0"]
+[ext_resource type="Texture2D" uid="uid://c5n0grwb617eg" path="res://assets/anima/imp/idle/Sprites/idle-2.png" id="37_lisom"]
+[ext_resource type="Texture2D" uid="uid://cqp628uinwfe7" path="res://assets/anima/imp/idle/Sprites/idle-3.png" id="38_2g85e"]
+[ext_resource type="Texture2D" uid="uid://cop6m27ukqpul" path="res://assets/anima/imp/idle/Sprites/idle-4.png" id="39_aioiq"]
+[ext_resource type="Texture2D" uid="uid://bn43il64m4nni" path="res://assets/button_on_of/red_boxCross.png" id="53_xkink"]
+[ext_resource type="Texture2D" uid="uid://cjlf6778c1tmo" path="res://assets/button_on_of/green_boxCheckmark.png" id="54_pldq1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qsop4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fnuah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_e4gpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q520c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_l81c7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1cfjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_42dmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1uju5")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_k7w7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oi76k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qs8o1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tsf7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e74c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_136ym")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ct6v0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_1h7jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_s6o85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xkink")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pldq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_omotw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_k2o0n")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_jbgn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lisom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2g85e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_aioiq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mn6ls"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_yjxvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_48es8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_1h7jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_s6o85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_xkink")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_pldq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_omotw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_k2o0n")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_jbgn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_lisom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_2g85e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_aioiq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_51xj6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_t13vj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gysrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hlhkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dk8lp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ftod1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fhu71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_elec8")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_gv7tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j11g2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1fklg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_n3pl4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_14q3e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_n3pl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_51xj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_se4uu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q2gkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b2dk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ur2ai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dau54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_86qi5")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_b17bj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j6y1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_p2smd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_14q3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qsop4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ct6v0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mn6ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0spie")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gv7tw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j11g2"]
+texture = ExtResource("18_fhu71")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1fklg"]
+texture = ExtResource("19_elec8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n3pl4"]
+texture = ExtResource("18_fhu71")
+
+[node name="logros" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f4k3q")
+
+[node name="background1" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -111.0
+offset_right = 109.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_blyse")
+
+[node name="Logro1" type="Node" parent="."]
+
+[node name="fondo" type="Sprite2D" parent="Logro1"]
+position = Vector2(360.5, 237)
+scale = Vector2(3.52105, 3.65)
+texture = ExtResource("4_gysrm")
+
+[node name="descripcion_1" type="Label" parent="Logro1"]
+offset_left = 155.0
+offset_top = 196.0
+offset_right = 527.0
+offset_bottom = 275.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 30
+text = "Juega tu primera actividad"
+metadata/_edit_use_anchors_ = true
+
+[node name="logro2" type="Label" parent="Logro1"]
+visible = false
+offset_left = 13.0
+offset_top = -39.0
+offset_right = 157.0
+offset_bottom = 11.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 40
+text = "Logro 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="icono_logro1" type="AnimatedSprite2D" parent="Logro1"]
+position = Vector2(93, 237)
+scale = Vector2(1.875, 1.875)
+sprite_frames = SubResource("SpriteFrames_qsop4")
+animation = &"activated"
+
+[node name="estado_ui_false" type="Sprite2D" parent="Logro1"]
+position = Vector2(608, 234)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("53_xkink")
+
+[node name="estado_ui_true" type="Sprite2D" parent="Logro1"]
+visible = false
+position = Vector2(608, 234)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("54_pldq1")
+
+[node name="Logro2" type="Node" parent="."]
+
+[node name="fondo" type="Sprite2D" parent="Logro2"]
+position = Vector2(360.5, 428)
+scale = Vector2(3.52105, 3.65)
+texture = ExtResource("4_gysrm")
+
+[node name="descripcion_2" type="Label" parent="Logro2"]
+offset_left = 155.0
+offset_top = 387.0
+offset_right = 527.0
+offset_bottom = 466.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 30
+text = "Completa 3 juegos 
+diferentes"
+metadata/_edit_use_anchors_ = true
+
+[node name="logro2" type="Label" parent="Logro2"]
+visible = false
+offset_left = 13.0
+offset_top = 200.0
+offset_right = 157.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 40
+text = "Logro 2"
+metadata/_edit_use_anchors_ = true
+
+[node name="icono_logro2" type="AnimatedSprite2D" parent="Logro2"]
+position = Vector2(96, 409)
+scale = Vector2(2.46875, 2.46875)
+sprite_frames = SubResource("SpriteFrames_ct6v0")
+animation = &"activated"
+
+[node name="estado_ui_false" type="Sprite2D" parent="Logro2"]
+position = Vector2(608, 425)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("53_xkink")
+
+[node name="estado_ui_true" type="Sprite2D" parent="Logro2"]
+visible = false
+position = Vector2(608, 423)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("54_pldq1")
+
+[node name="Logro3" type="Node" parent="."]
+
+[node name="fondo" type="Sprite2D" parent="Logro3"]
+position = Vector2(360.5, 616)
+scale = Vector2(3.52105, 3.65)
+texture = ExtResource("4_gysrm")
+
+[node name="descripcion_3" type="Label" parent="Logro3"]
+offset_left = 155.0
+offset_top = 575.0
+offset_right = 527.0
+offset_bottom = 654.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 30
+text = "Completa un nivel difícil"
+
+[node name="logro3" type="Label" parent="Logro3"]
+visible = false
+offset_left = 13.0
+offset_top = 433.0
+offset_right = 157.0
+offset_bottom = 483.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 40
+text = "Logro 3"
+
+[node name="icono_logro3" type="AnimatedSprite2D" parent="Logro3"]
+position = Vector2(93, 585)
+scale = Vector2(2.51528, 2.51528)
+sprite_frames = SubResource("SpriteFrames_mn6ls")
+
+[node name="estado_ui_false" type="Sprite2D" parent="Logro3"]
+position = Vector2(608, 613)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("53_xkink")
+
+[node name="estado_ui_true" type="Sprite2D" parent="Logro3"]
+visible = false
+position = Vector2(608, 614)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("54_pldq1")
+
+[node name="Logro4" type="Node" parent="."]
+
+[node name="fondo" type="Sprite2D" parent="Logro4"]
+position = Vector2(360.5, 799)
+scale = Vector2(3.52105, 3.65)
+texture = ExtResource("4_gysrm")
+
+[node name="descripcion_4" type="Label" parent="Logro4"]
+offset_left = 155.0
+offset_top = 758.0
+offset_right = 527.0
+offset_bottom = 837.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 30
+text = "Termina un rompecabezas
+en menos de 20 segundos "
+
+[node name="logro4" type="Label" parent="Logro4"]
+visible = false
+offset_left = 13.0
+offset_top = 657.0
+offset_right = 157.0
+offset_bottom = 707.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 40
+text = "Logro 4"
+
+[node name="icono_logro4" type="AnimatedSprite2D" parent="Logro4"]
+position = Vector2(93, 768)
+scale = Vector2(1.875, 1.875)
+sprite_frames = SubResource("SpriteFrames_51xj6")
+
+[node name="estado_ui_false" type="Sprite2D" parent="Logro4"]
+position = Vector2(608, 796)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("53_xkink")
+
+[node name="estado_ui_true" type="Sprite2D" parent="Logro4"]
+visible = false
+position = Vector2(608, 799)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("54_pldq1")
+
+[node name="Logro5" type="Node" parent="."]
+
+[node name="fondo" type="Sprite2D" parent="Logro5"]
+position = Vector2(360, 988)
+scale = Vector2(3.51579, 3.65)
+texture = ExtResource("4_gysrm")
+
+[node name="descripcion_5" type="Label" parent="Logro5"]
+offset_left = 150.0
+offset_top = 947.0
+offset_right = 522.0
+offset_bottom = 1026.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 30
+text = "Resuelve una actividad 
+sin perder vidas"
+
+[node name="logro5" type="Label" parent="Logro5"]
+visible = false
+offset_left = 8.0
+offset_top = 899.0
+offset_right = 152.0
+offset_bottom = 949.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 40
+text = "Logro 5"
+
+[node name="estado_ui_false" type="Sprite2D" parent="Logro5"]
+position = Vector2(603, 985)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("53_xkink")
+
+[node name="estado_ui_true" type="Sprite2D" parent="Logro5"]
+visible = false
+position = Vector2(608, 984)
+scale = Vector2(2.30556, 2.30556)
+texture = ExtResource("54_pldq1")
+
+[node name="icono_logro5" type="AnimatedSprite2D" parent="Logro5"]
+position = Vector2(93.1406, 977.473)
+scale = Vector2(1.49439, 1.49439)
+sprite_frames = SubResource("SpriteFrames_14q3e")
+animation = &"activated"
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.506
+anchor_top = 0.931
+anchor_right = 0.506
+anchor_bottom = 0.931
+offset_left = -148.32
+offset_top = -55.6799
+offset_right = 143.68
+offset_bottom = 66.3201
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_w3kj2")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_gv7tw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_j11g2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1fklg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n3pl4")
+text = "Volver"
+
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

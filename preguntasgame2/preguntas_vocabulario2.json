@@ -1,0 +1,248 @@
+[
+	{
+	  "definicion": "Fruto rojo pequeño y dulce.",
+	  "alternativas": ["Manzana", "Cereza", "Durazno", "Uva"],
+	  "respuesta_correcta": "Cereza"
+	},
+	{
+	  "definicion": "Lugar donde se tiene considerable numero de libros ordenados para su lectura.",
+	  "alternativas": ["Bodega", "Biblioteca", "Archivo", "Oficina"],
+	  "respuesta_correcta": "Biblioteca"
+	},
+	{
+	  "definicion": "Animal marino de ocho brazos.",
+	  "alternativas": ["Pulpo", "Cangrejo", "Calamar", "Tiburón"],
+	  "respuesta_correcta": "Pulpo"
+	},
+	{
+	  "definicion": "Dispositivo tradicional con el que puedes hacer y recibir llamadas.",
+	  "alternativas": ["Televisor", "Computador", "Teléfono", "Micrófono"],
+	  "respuesta_correcta": "Teléfono"
+	},
+	{
+	  "definicion": "Vehículo que vuela y transporta personas.",
+	  "alternativas": ["Avión", "Barco", "Tren", "Auto"],
+	  "respuesta_correcta": "Avión"
+	},
+	{
+	  "definicion": "Objeto que se usa para escribir con tinta.",
+	  "alternativas": ["Lápiz", "Regla", "Pincel", "Bolígrafo"],
+	  "respuesta_correcta": "Bolígrafo"
+	},
+	{
+	  "definicion": "Recipiente utilizado generalmente para tomar té.",
+	  "alternativas": ["Plato", "Cuchara", "Taza", "Olla"],
+	  "respuesta_correcta": "Taza"
+	},
+	{
+	  "definicion": "Animal que ladra y es considerado el mejor amigo del hombre.",
+	  "alternativas": ["Gato", "Perro", "Lobo", "Zorro"],
+	  "respuesta_correcta": "Perro"
+	},
+	{
+	  "definicion": "Fruto tropical ovalado comido generalmente en verano y reconocible por sus hojas que asimilan una corona.",
+	  "alternativas": ["Plátano", "Mango", "Piña", "Melón"],
+	  "respuesta_correcta": "Piña"
+	},
+	{
+	  "definicion": "Se usa para cortar papel.",
+	  "alternativas": ["Regla", "Tijeras", "Pegamento", "Goma"],
+	  "respuesta_correcta": "Tijeras"
+	},
+	{
+	  "definicion": "Animal que da leche y dice 'muu'.",
+	  "alternativas": ["Vaca", "Caballo", "Oveja", "Cabra"],
+	  "respuesta_correcta": "Vaca"
+	},
+	{
+	  "definicion": "Lugar donde vives.",
+	  "alternativas": ["Casa", "Escuela", "Oficina", "Tienda"],
+	  "respuesta_correcta": "Casa"
+	},
+	{
+	  "definicion": "Fruto color rojo con semillas amarillas por fuera.",
+	  "alternativas": ["Fresa", "Sandía", "Tomate", "Cereza"],
+	  "respuesta_correcta": "Fresa"
+	},
+	{
+	  "definicion": "Se usa para barrer el piso.",
+	  "alternativas": ["Cepillo", "Pala", "Escoba", "Trapo"],
+	  "respuesta_correcta": "Escoba"
+	},
+	{
+	  "definicion": "Reptil que cambia de color para mimetizarse a su entorno.",
+	  "alternativas": ["Lagarto", "Camaleón", "Serpiente", "Iguana"],
+	  "respuesta_correcta": "Camaleón"
+	},
+	{
+	  "definicion": "Aparato usado generalmente para ver noticias y/o peliculas.",
+	  "alternativas": ["Radio", "Computador", "Televisor", "Impresora"],
+	  "respuesta_correcta": "Televisor"
+	},
+	{
+	  "definicion": "Animal que ronronea.",
+	  "alternativas": ["Perro", "Gato", "Conejo", "Ratón"],
+	  "respuesta_correcta": "Gato"
+	},
+	{
+	  "definicion": "Color del sol.",
+	  "alternativas": ["Rojo", "Amarillo", "Azul", "Verde"],
+	  "respuesta_correcta": "Amarillo"
+	},
+	{
+	  "definicion": "Fruto con muchas semillas y cáscara dura, típico del verano.",
+	  "alternativas": ["Melón", "Sandía", "Durazno", "Manzana"],
+	  "respuesta_correcta": "Sandía"
+	},
+	{
+	  "definicion": "Parte del cuerpo que se usa para escuchar.",
+	  "alternativas": ["Ojo", "Nariz", "Boca", "Oído"],
+	  "respuesta_correcta": "Oído"
+	},
+	{
+	  "definicion": "Fruto seco que suele venir en una cáscara dura.",
+	  "alternativas": ["Almendra", "Uva", "Manzana", "Plátano"],
+	  "respuesta_correcta": "Almendra"
+	},
+	{
+	  "definicion": "Insecto que produce miel.",
+	  "alternativas": ["Mosca", "Abeja", "Avispa", "Hormiga"],
+	  "respuesta_correcta": "Abeja"
+	},
+	{
+	  "definicion": "Estrella que da luz y calor a la Tierra.",
+	  "alternativas": ["Luna", "Sol", "Marte", "Venus"],
+	  "respuesta_correcta": "Sol"
+	},
+	{
+	  "definicion": "Vehículo de dos ruedas sin motor.",
+	  "alternativas": ["Patineta", "Bicicleta", "Motocicleta", "Scooter"],
+	  "respuesta_correcta": "Bicicleta"
+	},
+	{
+	  "definicion": "Animal con orejas largas que salta mucho.",
+	  "alternativas": ["Ratón", "Conejo", "Gato", "Canguro"],
+	  "respuesta_correcta": "Conejo"
+	},
+	{
+	  "definicion": "Se usa para decir la hora.",
+	  "alternativas": ["Calendario", "Brújula", "Reloj", "Mapa"],
+	  "respuesta_correcta": "Reloj"
+	},
+	{
+	  "definicion": "Fruto amarillo alargado que se pela y se come crudo.",
+	  "alternativas": ["Limón", "Plátano", "Durazno", "Piña"],
+	  "respuesta_correcta": "Plátano"
+	},
+	{
+	  "definicion": "Se usa para calentar la comida rápidamente.",
+	  "alternativas": ["Horno", "Tostadora", "Microondas", "Cocina"],
+	  "respuesta_correcta": "Microondas"
+	},
+	{
+	  "definicion": "Animal doméstico que vive en una pecera.",
+	  "alternativas": ["Raton", "Perro", "Pez", "Gato"],
+	  "respuesta_correcta": "Pez"
+	},
+	{
+	  "definicion": "Aparato a base de pilas usado para iluminar la oscuridad.",
+	  "alternativas": ["Velador", "Linterna", "Lámpara", "Fósforo"],
+	  "respuesta_correcta": "Linterna"
+	},
+	{
+	  "definicion": "Fruto cítrico del tamaño de una manzana y de color anaranjado.",
+	  "alternativas": ["Naranja", "Mandarina", "Pomelo", "Limón"],
+	  "respuesta_correcta": "Naranja"
+	},
+	{
+	  "definicion": "Insecto que salta y emite un sonido caracteristico en la noche.",
+	  "alternativas": ["Saltamontes", "Grillo", "Mosquito", "Mariposa"],
+	  "respuesta_correcta": "Grillo"
+	},
+	{
+	  "definicion": "Objeto utilizado para verse a uno mismo.",
+	  "alternativas": ["Ventana", "Espejo", "Vidrio", "Pantalla"],
+	  "respuesta_correcta": "Espejo"
+	},
+	{
+	  "definicion": "Animal con rayas blancas y negras.",
+	  "alternativas": ["Cebra", "Tigre", "Leopardo", "Gato"],
+	  "respuesta_correcta": "Cebra"
+	},
+	{
+	  "definicion": "Fruta verde o morada que crece en racimos.",
+	  "alternativas": ["Uva", "Ciruela", "Kiwi", "Higo"],
+	  "respuesta_correcta": "Uva"
+	},
+	{
+	  "definicion": "Aparato pequeño usado para calcular y resolver operaciones matemáticas.",
+	  "alternativas": ["Ábaco", "Calculadora", "Computadora", "Regla"],
+	  "respuesta_correcta": "Calculadora"
+	},
+	{
+	  "definicion": "Fruto que se asocia con el amor y tiene forma de corazón.",
+	  "alternativas": ["Fresa", "Cereza", "Manzana", "Granada"],
+	  "respuesta_correcta": "Fresa"
+	},
+	{
+	  "definicion": "Objeto que sirve para protegerte de la lluvia.",
+	  "alternativas": ["Sombrero", "Paraguas", "Poncho", "Chaqueta"],
+	  "respuesta_correcta": "Paraguas"
+	},
+	{
+	  "definicion": "Reptil con caparazón.",
+	  "alternativas": ["Tortuga", "Serpiente", "Cocodrilo", "Iguana"],
+	  "respuesta_correcta": "Tortuga"
+	},
+	{
+	  "definicion": "Conjunto de hojas que forman una obra literaria o de cualquier otro indole.",
+	  "alternativas": ["Pantalla", "Proyector", "Libro", "Impresora"],
+	  "respuesta_correcta": "Libro"
+	},
+	{
+	  "definicion": "Parte del cuerpo que usas para ver.",
+	  "alternativas": ["Ojo", "Oreja", "Nariz", "Boca"],
+	  "respuesta_correcta": "Ojo"
+	},
+	{
+	  "definicion": "Lugar donde se prepara la comida.",
+	  "alternativas": ["Comedor", "Cocina", "Sala", "Patio"],
+	  "respuesta_correcta": "Cocina"
+	},
+	{
+	  "definicion": "Verdura comunmente utilizada como base en ensaladas.",
+	  "alternativas": ["Perejil", "Lechuga", "Espinaca", "Cilantro"],
+	  "respuesta_correcta": "Lechuga"
+	},
+	{
+	  "definicion": "Animal de granja que da lana.",
+	  "alternativas": ["Caballo", "Cabra", "Oveja", "Perro"],
+	  "respuesta_correcta": "Oveja"
+	},
+	{
+	  "definicion": "Vehículo que se desplaza sobre rieles.",
+	  "alternativas": ["Auto", "Tren", "Avión", "Camión"],
+	  "respuesta_correcta": "Tren"
+	},
+	{
+	  "definicion": "Fruto que se usa para hacer guacamole.",
+	  "alternativas": ["Pepino", "Palta", "Pimiento", "Tomate"],
+	  "respuesta_correcta": "Palta"
+	},
+	{
+	  "definicion": "Objeto que usas para atarte los zapatos.",
+	  "alternativas": ["Cordón", "Botón", "Cremallera", "Tira"],
+	  "respuesta_correcta": "Cordón"
+	},
+	{
+	  "definicion": "Oso australiano conocido por su lentitud.",
+	  "alternativas": ["Tortuga", "Perezoso", "Caracol", "Koala"],
+	  "respuesta_correcta": "Perezoso"
+	},
+	{
+	  "definicion": "Fruto con hueso grande, dulce y carnoso.",
+	  "alternativas": ["Ciruela", "Durazno", "Mango", "Cereza"],
+	  "respuesta_correcta": "Durazno"
+	}
+  ]
+  

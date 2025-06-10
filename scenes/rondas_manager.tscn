@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjj1ww8fm5iy0"]
+
+[ext_resource type="Script" uid="uid://dm2fhq6ggy6ho" path="res://scripts/rondas_manager.gd" id="1_6g5ft"]
+
+[node name="rondasManager" type="Node"]
+script = ExtResource("1_6g5ft")

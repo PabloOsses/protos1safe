@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://c2hhk6e50k278"]
+
+[ext_resource type="Script" uid="uid://d4lkji2806uum" path="res://scenes/cerrar_juego/cerrar_juego.gd" id="1_ovbvh"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_yf0oy"]
+[ext_resource type="Texture2D" uid="uid://1cyh6qr02ufu" path="res://assets/cerrar/red_boxCross.png" id="3_v3vn6"]
+[ext_resource type="Texture2D" uid="uid://cjlf6778c1tmo" path="res://assets/button_on_of/green_boxCheckmark.png" id="3_yf0oy"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="4_fapvk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p5dbg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v3vn6"]
+texture = ExtResource("3_yf0oy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fapvk"]
+texture = ExtResource("3_yf0oy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qiat4"]
+texture = ExtResource("3_yf0oy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_es13a"]
+texture = ExtResource("3_v3vn6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_184xg"]
+texture = ExtResource("3_v3vn6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t1sot"]
+texture = ExtResource("3_v3vn6")
+
+[node name="cerrar_juego_pantalla" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ovbvh")
+
+[node name="pantalla_falsa" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -111.0
+offset_right = 109.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yf0oy")
+
+[node name="Aceptar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 520.0
+offset_right = 305.0
+offset_bottom = 667.0
+theme_override_styles/focus = SubResource("StyleBoxTexture_p5dbg")
+theme_override_styles/hover = SubResource("StyleBoxTexture_v3vn6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fapvk")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qiat4")
+
+[node name="Cancelar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 520.0
+offset_right = 592.0
+offset_bottom = 665.0
+theme_override_styles/focus = SubResource("StyleBoxTexture_p5dbg")
+theme_override_styles/hover = SubResource("StyleBoxTexture_es13a")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_184xg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_t1sot")
+
+[node name="mensaje" type="Label" parent="."]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 245.0
+offset_right = 635.0
+offset_bottom = 398.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_fapvk")
+theme_override_font_sizes/font_size = 60
+text = "¿Desea salir de la
+aplicación?"
+
+[connection signal="pressed" from="Aceptar" to="." method="_on_aceptar_pressed"]
+[connection signal="pressed" from="Cancelar" to="." method="_on_cancelar_pressed"]

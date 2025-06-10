@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://br6rfehbwfwat"
+path="res://.godot/imported/Casual Observatory Main.wav-b5327d3182c3fd28436a4a102c4ac964.sample"
+
+[deps]
+
+source_file="res://assets/musicafondo/game3/Casual Observatory Main.wav"
+dest_files=["res://.godot/imported/Casual Observatory Main.wav-b5327d3182c3fd28436a4a102c4ac964.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,145 @@
+[gd_scene load_steps=14 format=3 uid="uid://dptp8gdaudr4n"]
+
+[ext_resource type="Script" uid="uid://bokxxdub3q1fl" path="res://scripts/gameselector.gd" id="1_rsu7d"]
+[ext_resource type="Texture2D" uid="uid://b4kb67gyttn0y" path="res://assets/texturasgenericas/green_panel.png" id="2_4fe2a"]
+[ext_resource type="Texture2D" uid="uid://bu6o6po3wpfov" path="res://assets/botones_textura/blue_circle.png" id="3_1ghhp"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_4p8ou"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4p8ou"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cpg7r"]
+texture = ExtResource("3_1ghhp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ghhp"]
+texture = ExtResource("3_1ghhp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hdbx"]
+texture = ExtResource("3_1ghhp")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8mc0h"]
+font = ExtResource("3_4p8ou")
+font_size = 62
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pt5xf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xd871"]
+texture = ExtResource("3_1ghhp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x7hyh"]
+texture = ExtResource("3_1ghhp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3xdwm"]
+texture = ExtResource("3_1ghhp")
+
+[node name="gameselector" type="Node"]
+script = ExtResource("1_rsu7d")
+
+[node name="background1" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -111.0
+offset_right = 109.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4fe2a")
+
+[node name="firstgame" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.318
+anchor_top = 0.297
+anchor_right = 0.318
+anchor_bottom = 0.297
+offset_left = -109.96
+offset_top = -96.16
+offset_right = 110.04
+offset_bottom = 95.84
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxTexture_4p8ou")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cpg7r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1ghhp")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3hdbx")
+
+[node name="temporal" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.5
+offset_top = -515.0
+offset_right = 230.5
+offset_bottom = -438.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Elegir actividad"
+label_settings = SubResource("LabelSettings_8mc0h")
+
+[node name="secondgame" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.265
+anchor_top = 0.517
+anchor_right = 0.265
+anchor_bottom = 0.517
+offset_left = -105.8
+offset_top = -105.76
+offset_right = 106.2
+offset_bottom = 106.24
+theme_override_styles/focus = SubResource("StyleBoxTexture_pt5xf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xd871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x7hyh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3xdwm")
+
+[node name="thirdgam" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.754
+anchor_right = 0.3
+anchor_bottom = 0.754
+offset_left = -106.0
+offset_top = -106.12
+offset_right = 106.0
+offset_bottom = 105.88
+theme_override_styles/focus = SubResource("StyleBoxTexture_pt5xf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xd871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x7hyh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3xdwm")
+
+[node name="fourgame" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.737
+anchor_top = 0.564
+anchor_right = 0.737
+anchor_bottom = 0.564
+offset_left = -105.64
+offset_top = -105.92
+offset_right = 106.36
+offset_bottom = 106.08
+theme_override_styles/focus = SubResource("StyleBoxTexture_pt5xf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xd871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x7hyh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3xdwm")
+
+[node name="fifthgame" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.737
+anchor_top = 0.814
+anchor_right = 0.737
+anchor_bottom = 0.814
+offset_left = -105.64
+offset_top = -105.92
+offset_right = 106.36
+offset_bottom = 106.08
+theme_override_styles/focus = SubResource("StyleBoxTexture_pt5xf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xd871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x7hyh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3xdwm")
+
+[connection signal="pressed" from="firstgame" to="." method="_on_firstgame_pressed"]
+[connection signal="pressed" from="secondgame" to="." method="_on_secondgame_pressed"]
+[connection signal="pressed" from="thirdgam" to="." method="_on_thirdgam_pressed"]
+[connection signal="pressed" from="fourgame" to="." method="_on_fourgame_pressed"]
+[connection signal="pressed" from="fifthgame" to="." method="_on_fifthgame_pressed"]

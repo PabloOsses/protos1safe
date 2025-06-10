@@ -1,0 +1,390 @@
+[gd_scene load_steps=39 format=3 uid="uid://dtklhatu4g88p"]
+
+[ext_resource type="Script" uid="uid://bapx1h7c4g75w" path="res://scripts/game_2.gd" id="1_dr8oi"]
+[ext_resource type="PackedScene" uid="uid://drr85wkk8bgxu" path="res://scenes/alien.tscn" id="2_r11to"]
+[ext_resource type="Texture2D" uid="uid://bfm4s1ycj3tmf" path="res://assets/texturasgenericas/yellow_panel.png" id="3_wjphx"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="4_3sm6k"]
+[ext_resource type="Texture2D" uid="uid://bvg0vr6luncyk" path="res://assets/botones_textura/blue_button02.png" id="6_k563j"]
+[ext_resource type="Texture2D" uid="uid://1j5k17vqpufg" path="res://assets/botones_textura/blue_button03.png" id="7_5m3wm"]
+[ext_resource type="AudioStream" uid="uid://b0bu315iwj81h" path="res://assets/sfxfeedback/Signal Positive Ceramic C.wav" id="8_c45dc"]
+[ext_resource type="AudioStream" uid="uid://c54ocl20jhrqk" path="res://assets/sfxfeedback/Signal Negative Space B.wav" id="9_b4gt0"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="10_dr8oi"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="10_glh1a"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="11_h0x8i"]
+[ext_resource type="Texture2D" uid="uid://bdg2pnye1en5f" path="res://assets/texturasgenericas/red_panel.png" id="13_dr8oi"]
+[ext_resource type="PackedScene" uid="uid://xru2yuflnnye" path="res://scenes/heart_counter/heart_counter.tscn" id="14_h0x8i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wgl31"]
+font = ExtResource("4_3sm6k")
+font_size = 40
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f674i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_so0bb"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c45dc"]
+texture = ExtResource("7_5m3wm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b4gt0"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wjphx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kmooo"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glh1a"]
+texture = ExtResource("7_5m3wm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dr8oi"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h0x8i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k563j"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5m3wm"]
+texture = ExtResource("7_5m3wm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ymr8n"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_io8iw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rye4h"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hv4xm"]
+texture = ExtResource("7_5m3wm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8fbon"]
+texture = ExtResource("6_k563j")
+
+[sub_resource type="LabelSettings" id="LabelSettings_3sm6k"]
+font = ExtResource("4_3sm6k")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f674i"]
+bg_color = Color(0.467738, 0.467738, 0.467738, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wjphx"]
+bg_color = Color(0.229423, 0.833621, 0.502636, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y24k5"]
+texture = ExtResource("10_dr8oi")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5a6l3"]
+texture = ExtResource("11_h0x8i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r6mhj"]
+texture = ExtResource("10_dr8oi")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uyfoi"]
+texture = ExtResource("13_dr8oi")
+
+[sub_resource type="LabelSettings" id="LabelSettings_xek7f"]
+font = ExtResource("4_3sm6k")
+font_size = 70
+
+[node name="game_2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dr8oi")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -85.0
+offset_right = 50.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_glh1a")
+
+[node name="header" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.508
+anchor_top = 0.067
+anchor_right = 0.508
+anchor_bottom = 0.067
+offset_left = -432.76
+offset_top = -164.76
+offset_right = 432.24
+offset_bottom = 165.24
+texture = ExtResource("3_wjphx")
+
+[node name="alien" parent="." instance=ExtResource("2_r11to")]
+position = Vector2(347, 367)
+scale = Vector2(5, 5)
+
+[node name="DefinicionLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.0
+offset_top = -24.0001
+offset_right = 210.0
+offset_bottom = 25.9999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "aaaaaaaaaaaaaaaaaaa"
+label_settings = SubResource("LabelSettings_wgl31")
+horizontal_alignment = 1
+
+[node name="Boton0" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.224
+anchor_top = 0.654
+anchor_right = 0.224
+anchor_bottom = 0.654
+offset_left = -100.28
+offset_top = -55.1201
+offset_right = 159.72
+offset_bottom = 54.8799
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_3sm6k")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_f674i")
+theme_override_styles/hover = SubResource("StyleBoxTexture_so0bb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_c45dc")
+theme_override_styles/normal = SubResource("StyleBoxTexture_b4gt0")
+text = "boton 0"
+
+[node name="Boton1" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.747
+anchor_top = 0.655
+anchor_right = 0.747
+anchor_bottom = 0.655
+offset_left = -99.84
+offset_top = -55.4
+offset_right = 164.16
+offset_bottom = 54.6
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_3sm6k")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_wjphx")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kmooo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_glh1a")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dr8oi")
+text = "boton1"
+
+[node name="Boton2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.218
+anchor_top = 0.799
+anchor_right = 0.218
+anchor_bottom = 0.799
+offset_left = -99.96
+offset_top = -54.72
+offset_right = 165.04
+offset_bottom = 55.28
+grow_vertical = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_3sm6k")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_h0x8i")
+theme_override_styles/hover = SubResource("StyleBoxTexture_k563j")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5m3wm")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ymr8n")
+text = "boton2"
+
+[node name="Boton3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.753
+anchor_top = 0.801
+anchor_right = 0.753
+anchor_bottom = 0.801
+offset_left = -100.16
+offset_top = -55.28
+offset_right = 159.84
+offset_bottom = 54.72
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_3sm6k")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_io8iw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rye4h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hv4xm")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8fbon")
+text = "boton3
+"
+
+[node name="ronda" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.068
+anchor_right = 0.5
+anchor_bottom = 0.068
+offset_left = -387.0
+offset_top = -55.04
+offset_right = 387.0
+offset_bottom = 7.96
+grow_horizontal = 2
+text = "aaaaaaaaaaaaaaaa"
+label_settings = SubResource("LabelSettings_3sm6k")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.491
+anchor_top = 0.391
+anchor_right = 0.491
+anchor_bottom = 0.391
+offset_left = -200.52
+offset_top = -32.48
+offset_right = 200.48
+offset_bottom = 31.52
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_f674i")
+theme_override_styles/fill = SubResource("StyleBoxFlat_wjphx")
+value = 20.0
+show_percentage = false
+
+[node name="positivo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_c45dc")
+bus = &"sfx"
+
+[node name="negativo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_b4gt0")
+bus = &"sfx"
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.506
+anchor_top = 0.931
+anchor_right = 0.506
+anchor_bottom = 0.931
+offset_left = -146.32
+offset_top = -60.6801
+offset_right = 145.68
+offset_bottom = 61.3199
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_3sm6k")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/hover = SubResource("StyleBoxTexture_y24k5")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5a6l3")
+theme_override_styles/normal = SubResource("StyleBoxTexture_r6mhj")
+text = "Volver"
+
+[node name="pantallaresumen" type="Node" parent="."]
+
+[node name="backgroundResumen" type="TextureRect" parent="pantallaresumen"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -156.0
+offset_right = 80.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_glh1a")
+
+[node name="textoResumen" type="Label" parent="pantallaresumen"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -128.5
+offset_right = 200.0
+offset_bottom = 128.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_3sm6k")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_uyfoi")
+text = "Puntaje:"
+label_settings = SubResource("LabelSettings_xek7f")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HeartCounter" parent="." instance=ExtResource("14_h0x8i")]
+position = Vector2(617, 499)
+
+[connection signal="resized" from="DefinicionLabel" to="." method="_on_definicion_label_resized"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

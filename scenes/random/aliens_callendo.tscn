@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=3 uid="uid://c5j2xe6gessce"]
+
+[ext_resource type="Script" uid="uid://r16s3ivyin6l" path="res://scenes/random/aliens_callendo.gd" id="1_2nyfy"]
+[ext_resource type="Texture2D" uid="uid://batf5wsgwx3oj" path="res://assets/alien_fondo/character_0000.png" id="2_h6ygv"]
+[ext_resource type="Texture2D" uid="uid://bqdss4txfcw82" path="res://assets/alien_fondo/character_0001.png" id="3_jgvvc"]
+[ext_resource type="Texture2D" uid="uid://dmeows01lo1l0" path="res://assets/alien_fondo/character_0004.png" id="4_gj7fy"]
+[ext_resource type="Texture2D" uid="uid://0wq3pb8i5pjm" path="res://assets/alien_fondo/character_0005.png" id="5_pndfr"]
+[ext_resource type="Texture2D" uid="uid://bbd2hf2rx7m30" path="res://assets/alien_fondo/character_0006.png" id="6_4bsm6"]
+[ext_resource type="Texture2D" uid="uid://dp1857ijyoxq8" path="res://assets/alien_fondo/character_0007.png" id="7_o5v2h"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rjjy0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h6ygv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jgvvc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_41tmx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_gj7fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pndfr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovl2s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_4bsm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_o5v2h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="aliensCallendo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2nyfy")
+
+[node name="verde" type="AnimatedSprite2D" parent="."]
+position = Vector2(333, 292)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_rjjy0")
+autoplay = "default"
+
+[node name="rojo" type="AnimatedSprite2D" parent="."]
+position = Vector2(181, 292)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_41tmx")
+autoplay = "default"
+
+[node name="yellow" type="AnimatedSprite2D" parent="."]
+position = Vector2(519, 293)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ovl2s")
+autoplay = "default"

@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://6k4fsccc5b1j"]
+
+[ext_resource type="Script" uid="uid://c3r5fshga14vp" path="res://scripts/pajaro.gd" id="1_esev6"]
+[ext_resource type="Texture2D" uid="uid://yndieoxu5u67" path="res://assets/crow/idle/crow-idle1.png" id="1_utckx"]
+[ext_resource type="Texture2D" uid="uid://c2gf0hmektasx" path="res://assets/crow/idle/crow-idle2.png" id="2_esev6"]
+[ext_resource type="Texture2D" uid="uid://c7cccsanp2a56" path="res://assets/crow/idle/crow-idle3.png" id="4_esev6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4xhxa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_utckx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_esev6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_esev6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_502bg"]
+size = Vector2(83.25, 59)
+
+[node name="pajaro" type="Node2D" groups=["elementos_juego"]]
+script = ExtResource("1_esev6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3.10417, 3.10417)
+sprite_frames = SubResource("SpriteFrames_4xhxa")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_502bg")

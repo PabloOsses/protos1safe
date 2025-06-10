@@ -1,0 +1,105 @@
+[gd_scene load_steps=15 format=3 uid="uid://cqx7wo6ych3xb"]
+
+[ext_resource type="Script" uid="uid://cquec0a4ax6ll" path="res://scripts/game_4/game_4v2.gd" id="1_0fn3u"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="2_iofj8"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="4_ibygo"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="5_23j1y"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="5_op44j"]
+[ext_resource type="AudioStream" uid="uid://b0bu315iwj81h" path="res://assets/sfxfeedback/Signal Positive Ceramic C.wav" id="6_ghmfu"]
+[ext_resource type="Texture2D" uid="uid://bdg2pnye1en5f" path="res://assets/texturasgenericas/red_panel.png" id="7_ibygo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ibygo"]
+font = ExtResource("2_iofj8")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ibygo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_23j1y"]
+texture = ExtResource("4_ibygo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eocld"]
+texture = ExtResource("5_23j1y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ow33d"]
+texture = ExtResource("4_ibygo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qpdx2"]
+texture = ExtResource("7_ibygo")
+
+[sub_resource type="LabelSettings" id="LabelSettings_bdn1m"]
+font = ExtResource("2_iofj8")
+font_size = 70
+
+[node name="game_4" type="Node2D"]
+script = ExtResource("1_0fn3u")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -173.0
+offset_top = -125.0
+offset_right = 884.0
+offset_bottom = 1847.0
+texture = ExtResource("5_op44j")
+
+[node name="instrucciones" type="Label" parent="."]
+offset_left = 22.0
+offset_top = 67.0
+offset_right = 686.0
+offset_bottom = 220.0
+text = "Memoriza la imagen y completa el
+rompecabezas "
+label_settings = SubResource("LabelSettings_ibygo")
+
+[node name="volver" type="Button" parent="."]
+offset_left = 226.0
+offset_top = 1095.0
+offset_right = 518.0
+offset_bottom = 1217.0
+theme_override_fonts/font = ExtResource("2_iofj8")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_ibygo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_23j1y")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_eocld")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ow33d")
+text = "Volver "
+
+[node name="positivo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ghmfu")
+
+[node name="pantallaresumen" type="Node" parent="."]
+
+[node name="backgroundResumen" type="TextureRect" parent="pantallaresumen"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -156.0
+offset_right = 80.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_op44j")
+
+[node name="textoResumen" type="Label" parent="pantallaresumen"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -128.5
+offset_right = 200.0
+offset_bottom = 128.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_iofj8")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_qpdx2")
+text = "Puntaje:"
+label_settings = SubResource("LabelSettings_bdn1m")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

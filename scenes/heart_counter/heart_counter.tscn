@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://xru2yuflnnye"]
+
+[ext_resource type="Script" uid="uid://cdyynlk0bii5u" path="res://scripts/heart_counter.gd" id="1_3hipr"]
+[ext_resource type="Texture2D" uid="uid://bvgkr4nksev4d" path="res://assets/texturasgenericas/tile_0044.png" id="2_40xk5"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_tcxun"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hwqvs"]
+font = ExtResource("3_tcxun")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[node name="HeartCounter" type="Node2D"]
+script = ExtResource("1_3hipr")
+
+[node name="Tile0044" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(3.80381, 3.82772)
+texture = ExtResource("2_40xk5")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 32.0
+offset_top = -35.0
+offset_right = 63.0
+offset_bottom = 28.0
+scale = Vector2(0.92599, 0.989785)
+text = "5"
+label_settings = SubResource("LabelSettings_hwqvs")

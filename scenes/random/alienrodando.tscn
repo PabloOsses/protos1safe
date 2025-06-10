@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://717sxdh6pjoa"]
+
+[ext_resource type="Texture2D" uid="uid://bbd2hf2rx7m30" path="res://assets/alien_fondo/character_0006.png" id="1_4wpwv"]
+[ext_resource type="Script" uid="uid://bsv572vjltmtm" path="res://scenes/random/alienrodando.gd" id="1_qs0t7"]
+[ext_resource type="Texture2D" uid="uid://dp1857ijyoxq8" path="res://assets/alien_fondo/character_0007.png" id="2_ipegg"]
+[ext_resource type="Script" uid="uid://uis2iuplat77" path="res://scenes/random/yellow_rodando.gd" id="4_3yeqo"]
+[ext_resource type="AudioStream" uid="uid://b42b0gygx7kwr" path="res://scenes/random/Update Flashlight A.wav" id="5_3yeqo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qs0t7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4wpwv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ipegg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="alienrodando" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qs0t7")
+
+[node name="yellow" type="AnimatedSprite2D" parent="."]
+position = Vector2(519, 293)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_qs0t7")
+autoplay = "default"
+script = ExtResource("4_3yeqo")
+
+[node name="UpdateFlashlightA" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(312, 796)
+stream = ExtResource("5_3yeqo")
+bus = &"sfx"

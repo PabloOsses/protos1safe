@@ -1,0 +1,319 @@
+[gd_scene load_steps=21 format=3 uid="uid://dobd2j8lav2pc"]
+
+[ext_resource type="Script" uid="uid://l8h2vxmjpfuq" path="res://scenes/registro/registro.gd" id="1_yy5hr"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_bipl1"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_ietr5"]
+[ext_resource type="Texture2D" uid="uid://bscqeo7ft5le0" path="res://assets/inputfields/grey_button05.png" id="4_whga4"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="5_1hfre"]
+[ext_resource type="Texture2D" uid="uid://dt7whsotpqdnu" path="res://assets/botones_textura/green_button04.png" id="5_bipl1"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="6_bipl1"]
+[ext_resource type="Texture2D" uid="uid://berlseembd151" path="res://assets/botones_textura/green_button05.png" id="6_i83sn"]
+[ext_resource type="Script" uid="uid://cfyiyxecicfjl" path="res://scenes/registro/registroautenticador.gd" id="7_ietr5"]
+[ext_resource type="PackedScene" uid="uid://b2arq7e7ydojk" path="res://scenes/buena_carga/carga_buena.tscn" id="10_bipl1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i83sn"]
+texture = ExtResource("4_whga4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_470e0"]
+texture = ExtResource("4_whga4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pqjlb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lyigu"]
+texture = ExtResource("5_bipl1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ckp2v"]
+texture = ExtResource("6_i83sn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_snl12"]
+texture = ExtResource("5_bipl1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kfn48"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o273k"]
+texture = ExtResource("5_1hfre")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jwa4j"]
+texture = ExtResource("6_bipl1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2mj3r"]
+texture = ExtResource("5_1hfre")
+
+[node name="registro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yy5hr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -129.0
+offset_right = 93.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bipl1")
+
+[node name="Nombre" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 173.0
+offset_right = 700.0
+offset_bottom = 276.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 40
+text = "Nombre"
+
+[node name="nombre_usuario" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.126
+anchor_right = 0.5
+anchor_bottom = 0.126
+offset_left = -61.0
+offset_top = 10.72
+offset_right = 339.0
+offset_bottom = 110.72
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_i83sn")
+alignment = 1
+
+[node name="email" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 289.0
+offset_right = 700.0
+offset_bottom = 392.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 40
+text = "Correo"
+
+[node name="mail" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.249
+anchor_right = 0.5
+anchor_bottom = 0.249
+offset_left = -63.0
+offset_top = -31.72
+offset_right = 337.0
+offset_bottom = 68.28
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_i83sn")
+alignment = 1
+
+[node name="contrasenia2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 404.0
+offset_right = 700.0
+offset_bottom = 507.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 40
+text = "Contraseña"
+
+[node name="contrasenia" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.496
+anchor_top = 0.384
+anchor_right = 0.496
+anchor_bottom = 0.384
+offset_left = -60.12
+offset_top = -90.52
+offset_right = 339.88
+offset_bottom = 9.47998
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_470e0")
+alignment = 1
+secret = true
+
+[node name="repetir_contra" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 520.0
+offset_right = 700.0
+offset_bottom = 623.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 40
+text = "Repetir
+Contraseña"
+
+[node name="repetir_contrasenia" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.523
+anchor_right = 0.5
+anchor_bottom = 0.523
+offset_left = -63.0
+offset_top = -148.44
+offset_right = 337.0
+offset_bottom = -48.44
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_470e0")
+alignment = 1
+secret = true
+
+[node name="Registrarse" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -258.5
+offset_top = 307.0
+offset_right = 258.5
+offset_bottom = 463.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_pqjlb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_lyigu")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ckp2v")
+theme_override_styles/normal = SubResource("StyleBoxTexture_snl12")
+text = "Registrarse"
+
+[node name="volver" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.934
+anchor_right = 0.504
+anchor_bottom = 0.934
+offset_left = -145.88
+offset_top = -65.52
+offset_right = 146.12
+offset_bottom = 65.48
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_kfn48")
+theme_override_styles/hover = SubResource("StyleBoxTexture_o273k")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jwa4j")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2mj3r")
+text = "Volver"
+
+[node name="AuthManager" type="Node" parent="."]
+script = ExtResource("7_ietr5")
+
+[node name="instrucciones" type="Label" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 30.0
+offset_right = 698.0
+offset_bottom = 133.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 40
+text = "Completa los datos para registrarte
+en el sistema"
+
+[node name="mensaje_oculto" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 736.0
+offset_right = 678.0
+offset_bottom = 839.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ietr5")
+theme_override_font_sizes/font_size = 40
+text = "mensaje oculto"
+
+[node name="carga_buena" parent="." instance=ExtResource("10_bipl1")]
+layout_mode = 1
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 1.0
+offset_bottom = -2.0
+
+[connection signal="pressed" from="Registrarse" to="." method="_on_registrarse_pressed"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

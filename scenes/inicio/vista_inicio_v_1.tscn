@@ -1,0 +1,178 @@
+[gd_scene load_steps=23 format=3 uid="uid://yh1eedt72pg"]
+
+[ext_resource type="Script" uid="uid://dilrhdok5qi2x" path="res://scripts/inicio/vista_inicio_v_1.gd" id="1_0inss"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="1_fvye7"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="2_7u661"]
+[ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="3_0inss"]
+[ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="4_iemoc"]
+[ext_resource type="PackedScene" uid="uid://c2hhk6e50k278" path="res://scenes/cerrar_juego/cerrar_juego.tscn" id="9_lc3l7"]
+[ext_resource type="Texture2D" uid="uid://1cyh6qr02ufu" path="res://assets/cerrar/red_boxCross.png" id="9_se0jk"]
+[ext_resource type="Texture2D" uid="uid://bvg0vr6luncyk" path="res://assets/botones_textura/blue_button02.png" id="12_s2ayc"]
+[ext_resource type="Texture2D" uid="uid://1j5k17vqpufg" path="res://assets/botones_textura/blue_button03.png" id="13_vne4n"]
+[ext_resource type="PackedScene" uid="uid://c5j2xe6gessce" path="res://scenes/random/aliens_callendo.tscn" id="14_l3uot"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qjmag"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b88ya"]
+texture = ExtResource("3_0inss")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7u661"]
+texture = ExtResource("4_iemoc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_se0jk"]
+texture = ExtResource("3_0inss")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l3uot"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6n7h5"]
+texture = ExtResource("12_s2ayc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fdqci"]
+texture = ExtResource("13_vne4n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yxbt5"]
+texture = ExtResource("12_s2ayc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_km23q"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yfgev"]
+texture = ExtResource("9_se0jk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s2ayc"]
+texture = ExtResource("9_se0jk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vne4n"]
+texture = ExtResource("9_se0jk")
+
+[node name="vista_inicio_v1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0inss")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -129.0
+offset_right = 93.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fvye7")
+
+[node name="aliensCallendo" parent="." instance=ExtResource("14_l3uot")]
+layout_mode = 1
+
+[node name="Inicio" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -247.0
+offset_top = -120.0
+offset_right = 230.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7u661")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_qjmag")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b88ya")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7u661")
+theme_override_styles/normal = SubResource("StyleBoxTexture_se0jk")
+text = "Jugar"
+
+[node name="Credenciales" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.496
+anchor_top = 0.787
+anchor_right = 0.496
+anchor_bottom = 0.787
+offset_left = -309.12
+offset_top = -128.36
+offset_right = 308.88
+offset_bottom = 129.64
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7u661")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxTexture_l3uot")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6n7h5")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fdqci")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yxbt5")
+text = "Inicio 
+sesión"
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.5
+offset_top = 150.0
+offset_right = 260.5
+offset_bottom = 225.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7u661")
+theme_override_font_sizes/font_size = 60
+text = "Entrenador Mental"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cerrar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 32.0
+offset_right = 686.0
+offset_bottom = 128.0
+theme_override_styles/focus = SubResource("StyleBoxTexture_km23q")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yfgev")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_s2ayc")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vne4n")
+
+[node name="cerrar_juego_pantalla" parent="." instance=ExtResource("9_lc3l7")]
+visible = false
+layout_mode = 1
+offset_left = 5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = -5.0
+
+[connection signal="pressed" from="Inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="Credenciales" to="." method="_on_credenciales_pressed"]
+[connection signal="pressed" from="cerrar" to="." method="_on_cerrar_pressed"]

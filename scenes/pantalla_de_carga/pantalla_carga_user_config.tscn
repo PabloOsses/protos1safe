@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://l0ovuhsh2131"]
+
+[ext_resource type="Script" uid="uid://630us8fiabwb" path="res://scenes/pantalla_de_carga/pantalla_carga_user_config.gd" id="1_p64p2"]
+[ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_imt1k"]
+[ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_imt1k"]
+[ext_resource type="PackedScene" uid="uid://717sxdh6pjoa" path="res://scenes/random/alienrodando.tscn" id="4_gt37f"]
+
+[node name="pantallaCarga_user_config" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p64p2")
+
+[node name="pantalla_falsa" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -111.0
+offset_right = 109.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_imt1k")
+
+[node name="cargando" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.5
+offset_top = -31.5
+offset_right = 130.5
+offset_bottom = 31.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_imt1k")
+theme_override_font_sizes/font_size = 50
+text = "Cargando..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="alienrodando" parent="." instance=ExtResource("4_gt37f")]
+layout_mode = 1
+offset_left = -2.0
+offset_top = 1.0
+offset_right = -2.0
+offset_bottom = 1.0
