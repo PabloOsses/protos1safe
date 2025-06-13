@@ -2,7 +2,7 @@ extends Node
 
 # URL del endpoint de login
 const Config = preload("res://config.gd")
-var LOGIN_URL = Config.API_BASE_URL
+var LOGIN_URL = Config.API_BASE_URL+"/auth/login"
 
 
 signal login_success(id_usuario: int, message: String)
