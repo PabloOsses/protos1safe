@@ -1,6 +1,6 @@
 extends AnimatedSprite2D
 
-# Configuración de movimiento
+# configuracion de movimiento
 @export var velocidad_base := 200.0
 @export var limite_superior_y := 150.0
 @export var limite_inferior_y := 1000.0
@@ -21,7 +21,7 @@ func _ready():
 	velocidad = Vector2(velocidad_base * direccion, -fuerza_rebote)
 	play("rodar")
 	
-	# Configurar timer para reaparición
+	# configurar timer reaparicion
 	timer_espera = Timer.new()
 	add_child(timer_espera)
 	timer_espera.timeout.connect(_reaparecer)
@@ -36,47 +36,43 @@ func _physics_process(delta):
 	if esta_esperando:
 		return
 		
-	# Movimiento horizontal
+	# mov horizontal
 	position.x += velocidad.x * delta
 	
-	# Movimiento vertical con gravedad
+	# mov vertical 
 	velocidad.y += gravedad * delta
 	position.y += velocidad.y * delta
 	
-	# Rebotes verticales
+	# rebortes verticales
 	if position.y <= limite_superior_y:
 		position.y = limite_superior_y
 		velocidad.y = abs(velocidad.y) * amortiguacion
-		#print("¡Rebote en techo!")
-		#emit_signal("rebote_techo")
+		
 		
 	if position.y >= limite_inferior_y:
 		position.y = limite_inferior_y
 		velocidad.y = -abs(velocidad.y) * amortiguacion
-		#print("¡Rebote en suelo!")
-		#$"../UpdateFlashlightA".play()
-		#emit_signal("rebote_suelo")
+		
 	
-	# Rotación del sprite
+	# rotacion del sprite
 	rotation += velocidad.x * delta * 0.015 * direccion
 	
-	# Detección de límite derecho
+	# limite derecho
 	if position.x > viewport_size.x + 100 and !esta_esperando:
 		_iniciar_espera()
 
 func _iniciar_espera():
 	esta_esperando = true
-	visible = false  # Ocultar alien
-	print("Alien llegó al borde. Esperando ", tiempo_espera_reaparicion, " segundos...")
+	visible = false  # ocultar alien
+	print("se llego al borde")
 	
-	# Opcional: emitir señal para sonido/vfx de desaparición
-	#emit_signal("desaparecio")
 	
-	# Iniciar timer para reaparición
+	
+	# timer para reaparicion
 	timer_espera.start(tiempo_espera_reaparicion)
 
 func _reaparecer():
-	# Restablecer posición a la izquierda con altura aleatoria
+	# restablecer posicion a la izquierda con altura aleatoria
 	position = Vector2(
 		-100,
 		randf_range(limite_inferior_y * 0.6, limite_inferior_y * 0.9)
@@ -87,7 +83,7 @@ func _reaparecer():
 	esta_esperando = false
 	visible = true
 	rotation = 0
-	print("¡Alien reaparece! Posición: ", position)
+	#print("YELLOW REAPARECE", position)
 	
 	# Opcional: emitir señal para sonido/vfx de aparición
 	#emit_signal("reaparecio")

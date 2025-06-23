@@ -29,6 +29,7 @@ var tween_cerrar_sesion: Tween
 @onready var cerrar_juego=$cerrar_juego_pantalla
 
 func _ready() -> void:
+	$Label.visible=false
 	pantalla_carga.aparecer()
 	cerrar_juego.visible=false
 	for i in [ $Juegos, $rankingGlobales, $Logros, $configuracion, $cerrar_sesion]:
@@ -46,7 +47,7 @@ func _ready() -> void:
 		
 		#EN CASO DE NECESITAR MAS TIEMPO PARA CARGAR DATOS
 		
-		await get_tree().create_timer(7).timeout
+		await get_tree().create_timer(5).timeout
 		#await Globales.cargar_configuracion_usuario()
 		pantalla_carga.desaparecer()
 		
@@ -176,4 +177,12 @@ func _on_logros_pressed() -> void:
 
 func _on_cerrar_pressed() -> void:
 	cerrar_juego.visible=true
+	pass # Replace with function body.
+
+
+func _on_button_pressed() -> void:
+	if $Label.visible ==true:
+		$Label.visible=false
+	else:
+		$Label.visible=true
 	pass # Replace with function body.

@@ -289,7 +289,7 @@ offset_left = -256.32
 offset_top = -76.92
 offset_right = 256.68
 offset_bottom = 76.08
-text = "¿Cuántos pajaros 
+text = "¿Cuántos pájaros 
 hay en pantalla?"
 label_settings = SubResource("LabelSettings_a1lbx")
 

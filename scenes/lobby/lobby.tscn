@@ -280,21 +280,31 @@ text = " Cerrar sesión"
 
 [node name="Titulo" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.11
 anchor_right = 0.5
+anchor_bottom = 0.11
 offset_left = -217.0
-offset_top = 103.0
+offset_top = -37.8
 offset_right = 217.0
-offset_bottom = 166.0
+offset_bottom = 25.2
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_2tt0b")
 theme_override_font_sizes/font_size = 60
-text = "Entrenador Mental"
+text = "MentiActiva"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Titulo"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 27.0
+offset_top = -11.0
+offset_right = 399.0
+offset_bottom = 57.0
 
 [node name="cerrar" type="Button" parent="."]
 layout_mode = 0
@@ -308,6 +318,7 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_wvcvr")
 theme_override_styles/normal = SubResource("StyleBoxTexture_wxlhk")
 
 [node name="pantallaCarga" parent="." instance=ExtResource("9_l1n8d")]
+visible = false
 layout_mode = 1
 offset_left = -2.0
 offset_top = 4.0
@@ -327,4 +338,5 @@ offset_bottom = -1.0
 [connection signal="pressed" from="Logros" to="." method="_on_logros_pressed"]
 [connection signal="pressed" from="configuracion" to="." method="_on_configuracion_pressed"]
 [connection signal="pressed" from="cerrar_sesion" to="." method="_on_cerrar_sesion_pressed"]
+[connection signal="pressed" from="Titulo/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="cerrar" to="." method="_on_cerrar_pressed"]
