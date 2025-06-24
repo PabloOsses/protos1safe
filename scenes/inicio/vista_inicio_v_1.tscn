@@ -138,13 +138,15 @@ sesión"
 
 [node name="Titulo" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -260.5
-offset_top = 150.0
-offset_right = 260.5
-offset_bottom = 225.0
+anchors_preset = -1
+anchor_left = 0.477
+anchor_top = 0.146
+anchor_right = 0.477
+anchor_bottom = 0.146
+offset_left = -260.44
+offset_top = -36.88
+offset_right = 260.56
+offset_bottom = 38.12
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
