@@ -6,28 +6,28 @@ const API_URL = Config.API_BASE_URL+"/ranking"
 const PLAYER_SCORE_URL = Config.API_BASE_URL+"/puntaje-usuario"
 const TOP_PLAYERS_TO_SHOW = 5
 
-# Nodos HTTPRequest separados
+# nodos HTTPRequest separados
 @onready var http_request_ranking = $HTTPRequestRanking
 @onready var http_request_score = $HTTPRequestScore
 
-# Labels para mostrar la información
+# labels para mostrar la informacion
 @onready var player_labels = [$Label1, $Label2, $Label3, $Label4, $Label5]
 @onready var puntajejugador = $puntajejugador
 
 func _ready():
-	# Inicializar labels con valores por defecto
+	# labels con valores con defecto
 	initialize_labels()
 	
-	# Conectar señales de los HTTPRequests
+	# coneccionde señales
 	http_request_ranking.request_completed.connect(_on_ranking_completed)
 	http_request_score.request_completed.connect(_on_score_completed)
 	
-	# Hacer las peticiones
+	# peticiones
 	fetch_ranking()
 	fetch_player_score()
 
 func initialize_labels():
-	# Configurar texto inicial en los labels
+	# texto inicial en los labels
 	for i in range(TOP_PLAYERS_TO_SHOW):
 		player_labels[i].text = "   %d- Cargando..." % (i + 1)
 	puntajejugador.text = "Tu puntaje: Cargando..."
@@ -108,31 +108,28 @@ func parse_json(body):
 	return json.get_data()
 
 func process_ranking_data(data):
-	# Ordenar por puntuación descendente
+	# se ordena por puntucion desendiante
 	data.sort_custom(func(a, b): return a["puntuacion_total"] > b["puntuacion_total"])
 	
-	# Mostrar los primeros TOP_PLAYERS_TO_SHOW jugadores
+	# mostrar los primeros TOP_PLAYERS_TO_SHOW jugadores
 	for i in range(min(TOP_PLAYERS_TO_SHOW, data.size())):
 		var player = data[i]
 		player_labels[i].text = "   %d- %s: %d pts" % [i + 1, player["nombre_usuario"], player["puntuacion_total"]]
 	
-	# Limpiar labels restantes si hay menos jugadores que TOP_PLAYERS_TO_SHOW
+	# caso: si hay menos jugadores que TOP_PLAYERS_TO_SHOW
 	for i in range(data.size(), TOP_PLAYERS_TO_SHOW):
 		player_labels[i].text = "   %d- ---" % (i + 1)
 
 func process_score_data(data):
 	if data.has("puntuacion_total"):
-		puntajejugador.text = "Tu puntaje: %d pts" % data["puntuacion_total"]
-		
-		# Opcional: Mostrar también el nombre del jugador
 		if data.has("nombre_usuario"):
-			puntajejugador.text = "%s: %d pts" % [data["nombre_usuario"], data["puntuacion_total"]]
+			puntajejugador.text = "%s, tu puntaje es: %d pts" % [data["nombre_usuario"], data["puntuacion_total"]]
 	else:
 		print("Datos de puntaje incompletos:", data)
 		puntajejugador.text = "Puntaje no disponible"
 
 func show_error(message):
-	# Mostrar mensaje de error en los labels
+	# mensaje de error (en caso de)
 	for i in range(TOP_PLAYERS_TO_SHOW):
 		player_labels[i].text = "   %d- Error" % (i + 1)
 	puntajejugador.text = message
