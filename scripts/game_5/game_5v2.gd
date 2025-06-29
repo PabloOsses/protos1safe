@@ -118,12 +118,13 @@ func setup_clock_button(button: TextureButton, clock_data: Dictionary):
 	# configuracion visual
 	button.texture_normal = texture
 	button.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
-	
+	#button.stretch_mode = TextureButton.STRETCH_SCALE 
+	 
 	# tamaño responsivo
 	var button_size = _get_platform_button_size()
 	button.custom_minimum_size = button_size
 	button.size = button_size
-	
+	print("GAME 5 Tamaño asignado al botOn: ", button_size)
 	# Configuracion de interaccion
 	button.mouse_filter = Control.MOUSE_FILTER_STOP
 	button.focus_mode = Control.FOCUS_NONE if is_android else Control.FOCUS_ALL
@@ -140,6 +141,7 @@ func setup_clock_button(button: TextureButton, clock_data: Dictionary):
 	# Redibujado para Android
 	if is_android:
 		button.queue_redraw()
+
 
 func _load_texture_for_platform(path: String) -> Texture2D:
 	# Carga optimizada para ambas plataformas
@@ -168,8 +170,9 @@ func _get_platform_button_size() -> Vector2:
 		var screen_size = DisplayServer.screen_get_size()
 		var min_dimension = min(screen_size.x, screen_size.y)
 		return Vector2(min_dimension * 0.2, min_dimension * 0.2)
+		#return Vector2(20, 20)
 	else:
-		return Vector2(100, 100)  # Tamaño fijo para PC
+		return Vector2(20, 20)  # Tamaño fijo para PC
 
 func _safe_connect_button(button: TextureButton):
 	# coneccion de señales

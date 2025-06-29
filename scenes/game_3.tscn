@@ -1,9 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://bai3booibx7cy"]
+[gd_scene load_steps=22 format=3 uid="uid://bai3booibx7cy"]
 
 [ext_resource type="Script" uid="uid://cm4vhqqyonlrd" path="res://scripts/game_3/game_3_v3.gd" id="1_r1ad8"]
 [ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="2_h40rj"]
 [ext_resource type="PackedScene" uid="uid://bex2m6ghs62t7" path="res://scenes/game_test_3.tscn" id="2_ojoub"]
 [ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_y55uh"]
+[ext_resource type="Texture2D" uid="uid://bfm4s1ycj3tmf" path="res://assets/texturasgenericas/yellow_panel.png" id="3_1uv66"]
 [ext_resource type="Script" uid="uid://ur1qsdanhpwo" path="res://scripts/game_3/game_3_v3_numeros.gd" id="4_1uv66"]
 [ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="5_w46gi"]
 [ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="6_khyur"]
@@ -63,6 +64,19 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_y55uh")
 
+[node name="header" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.508
+anchor_top = 0.067
+anchor_right = 0.508
+anchor_bottom = 0.067
+offset_left = -432.76
+offset_top = -164.76
+offset_right = 432.24
+offset_bottom = 165.24
+texture = ExtResource("3_1uv66")
+
 [node name="HealthBar" type="ProgressBar" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -71,9 +85,9 @@ anchor_top = 0.199
 anchor_right = 0.491
 anchor_bottom = 0.199
 offset_left = -200.52
-offset_top = -31.72
+offset_top = -94.72
 offset_right = 200.48
-offset_bottom = 32.28
+offset_bottom = -30.72
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_w46gi")
@@ -93,12 +107,12 @@ anchor_top = 0.136
 anchor_right = 0.5
 anchor_bottom = 0.136
 offset_left = -317.0
-offset_top = -69.08
+offset_top = -177.08
 offset_right = 317.0
-offset_bottom = 68.92
+offset_bottom = -39.08
 grow_horizontal = 2
 grow_vertical = 2
-text = "Agrupa numeros para que sumen:"
+text = "Combina numeros para que sumen:"
 label_settings = SubResource("LabelSettings_ojoub")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -184,6 +198,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HeartCounter" parent="." instance=ExtResource("10_khyur")]
-position = Vector2(605, 258)
+position = Vector2(605, 195)
 
 [connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

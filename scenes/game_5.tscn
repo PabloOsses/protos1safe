@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://duok380m6jb3v"]
+[gd_scene load_steps=20 format=3 uid="uid://duok380m6jb3v"]
 
 [ext_resource type="Script" uid="uid://2x3timqkujh0" path="res://scripts/game_5/game_5v2.gd" id="1_r0c6g"]
 [ext_resource type="Texture2D" uid="uid://d0vxcs6jpwl8e" path="res://assets/texturasgenericas/grey_panel.png" id="2_55mim"]
 [ext_resource type="FontFile" uid="uid://b2lderbh3o76w" path="res://assets/fuentes/AtkinsonHyperlegible-Bold.ttf" id="3_55mim"]
+[ext_resource type="Texture2D" uid="uid://bfm4s1ycj3tmf" path="res://assets/texturasgenericas/yellow_panel.png" id="3_acn3l"]
 [ext_resource type="Texture2D" uid="uid://5el60unpnqtf" path="res://assets/botones_textura/red_button01.png" id="4_r0c6g"]
 [ext_resource type="Texture2D" uid="uid://cake3pvtyxtid" path="res://assets/botones_textura/red_button02.png" id="5_pp6oe"]
 [ext_resource type="AudioStream" uid="uid://b0bu315iwj81h" path="res://assets/sfxfeedback/Signal Positive Ceramic C.wav" id="6_pp6oe"]
@@ -61,6 +62,38 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_55mim")
 
+[node name="header" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.508
+anchor_top = 0.067
+anchor_right = 0.508
+anchor_bottom = 0.067
+offset_left = -432.76
+offset_top = -189.76
+offset_right = 432.24
+offset_bottom = 140.24
+texture = ExtResource("3_acn3l")
+
+[node name="Instrucciones" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.107
+anchor_right = 0.504
+anchor_bottom = 0.107
+offset_left = -336.88
+offset_top = -128.96
+offset_right = 333.12
+offset_bottom = -40.96
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_55mim")
+theme_override_font_sizes/font_size = 60
+text = "Escoge el reloj correcto"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="DigitalClock" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -69,9 +102,9 @@ anchor_top = 0.107
 anchor_right = 0.504
 anchor_bottom = 0.107
 offset_left = -203.88
-offset_top = -43.96
+offset_top = -8.96001
 offset_right = 204.12
-offset_bottom = 44.04
+offset_bottom = 79.04
 text = "TIME LABEL"
 label_settings = SubResource("LabelSettings_yqsuj")
 horizontal_alignment = 1
@@ -85,9 +118,9 @@ anchor_top = 0.191
 anchor_right = 0.5
 anchor_bottom = 0.191
 offset_left = -209.0
-offset_top = -31.48
+offset_top = -4.48
 offset_right = 192.0
-offset_bottom = 32.52
+offset_bottom = 59.52
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_55mim")
@@ -126,10 +159,10 @@ anchor_left = 0.5
 anchor_top = 0.628
 anchor_right = 0.5
 anchor_bottom = 0.628
-offset_left = -59.0
-offset_top = -40.84
-offset_right = -1.0
-offset_bottom = 22.16
+offset_left = -34.0
+offset_top = -68.84
+offset_right = 24.0
+offset_bottom = -5.84003
 
 [node name="volver" type="Button" parent="."]
 layout_mode = 1
@@ -208,6 +241,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HeartCounter" parent="." instance=ExtResource("9_5xf7f")]
-position = Vector2(594, 246)
+position = Vector2(594, 273)
 
 [connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
