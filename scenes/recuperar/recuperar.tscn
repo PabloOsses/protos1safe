@@ -98,6 +98,21 @@ theme_override_fonts/font = ExtResource("3_xhckd")
 theme_override_font_sizes/font_size = 40
 text = "Correo"
 
+[node name="intrucciones_mail" type="Label" parent="enviocorreo"]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 379.0
+offset_right = 694.0
+offset_bottom = 482.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_xhckd")
+theme_override_font_sizes/font_size = 40
+text = "Correo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="mail" type="LineEdit" parent="enviocorreo"]
 layout_mode = 1
 anchors_preset = -1
@@ -156,6 +171,7 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_kvo3l")
 text = "Enviar correo"
 
 [node name="nueva_contrasenia" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0

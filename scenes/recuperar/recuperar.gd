@@ -4,6 +4,7 @@ extends Control
 @onready var correo=$enviocorreo/mail
 @onready var nueva_contra=$nueva_contrasenia
 @onready var pantalla_carga=$carga_buena
+@onready var correo_instruc=$enviocorreo/intrucciones_mail
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	enviocorreo.visible=true
@@ -23,7 +24,7 @@ func _on_volver_pressed() -> void:
 
 
 func _on_boton_nueva_contraseña_pressed() -> void:
-	print("otra escena")
+	print("IR A OTRA ESCENA")
 	pantalla_carga.editar_mensaje_carga("Cargando")
 	pantalla_carga.aparecer()
 	await get_tree().create_timer(2.0).timeout
@@ -51,7 +52,9 @@ func _on_boton_enviar_mail_pressed() -> void:
 	http_verificar.request_completed.connect(_on_verificacion_completada.bind(email))
 	
 	var error = http_verificar.request(endpoint_verificar)
+	print("RECUPERAR el error o algo:",error)
 	if error != OK:
+		print("RECUPERAR ERROR")
 		pantalla_carga.desaparecer()
 		mostrar_error("Error en la conexión. Intenta nuevamente.")
 		http_verificar.queue_free()
@@ -64,6 +67,13 @@ func _on_verificacion_completada(result: int, response_code: int, headers: Packe
 	if response_code != 200:
 		pantalla_carga.desaparecer()
 		mostrar_error("Error del servidor (Código %d)" % response_code)
+		print("CASO MAIL INCORRECTO")
+		enviocorreo.visible = true
+		nueva_contra.visible = false
+		correo_instruc.visible=true
+		correo_instruc.add_theme_color_override("font_color", Color.RED)
+		correo_instruc.text="Escriba un mail válido"
+		
 		return
 	
 	var json = JSON.new()
@@ -97,6 +107,7 @@ func _on_verificacion_completada(result: int, response_code: int, headers: Packe
 
 func _on_recuperacion_completada(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray):
 	var http_recuperar = get_node_or_null("HTTPRequest")
+	print("RECUPERAR COMPLETADA",http_recuperar)
 	if http_recuperar:
 		http_recuperar.queue_free()
 	
@@ -108,17 +119,18 @@ func _on_recuperacion_completada(result: int, response_code: int, headers: Packe
 		400:
 			mostrar_error("Email no válido")
 		500:
+			#print("recuperar AQUI AQUI AQUI!!!")
 			mostrar_error("Error interno del servidor")
 		_:
 			mostrar_error("Error desconocido (Código %d)" % response_code)
 
-# Funciones auxiliares (debes implementarlas según tu UI)
+# funciones auxiliares 
 func mostrar_error(mensaje: String):
-	# Ejemplo básico - ajusta según tu UI
+	
 	
 	print("ERROR: ", mensaje)
 
 func mostrar_mensaje_exito(mensaje: String):
-	# Ejemplo básico - ajusta según tu UI
+	
 	
 	print("ÉXITO: ", mensaje)
